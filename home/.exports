@@ -1,0 +1,5 @@
+export ANDROID_HOME="~/Library/Android/sdk"
+export APK_DIR=build/outputs/apk
+export NOSENTRY=1
+export LANG='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'

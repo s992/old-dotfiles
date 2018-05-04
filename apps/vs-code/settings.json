@@ -1,0 +1,48 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Editor
+    "editor.tabSize": 2,
+    "editor.renderIndentGuides": false,
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0,
+    "editor.suggestOnTriggerCharacters": false,
+    "typescript.check.tscVersion": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": true,
+    "files.exclude": {
+      "**/*.js": { "when": "$(basename).ts" },
+      "**/*.map": { "when": "$(basename).map" },
+      "**/*.css": { "when": "$(basename).scss" }
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "typescript.check.npmIsInstalled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.blame.line.enabled": false,
+    "prettier.trailingComma": "all",
+    "prettier.singleQuote": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 13,
+    "extensions.ignoreRecommendations": false,
+    "vsicons.projectDetection.disableDetect": true,
+    "jupyter.appendResults": false,
+    "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true,
+      "suppressUpdateNotice": true,
+      "suppressWelcomeNotice": false
+    },
+    "vim.cmdLineInitialColon": true,
+    "vim.useSystemClipboard": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.keymap": "chorded",
+    "bracketPairColorizer.timeOut": 0
+  }

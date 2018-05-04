@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"DiffTabs",
+		"Dockerfile Syntax Highlighting",
+		"GitGutter",
+		"JSX",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"Pretty JSON",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-tslint",
+		"Swift",
+		"TypeScript",
+		"Vue Syntax Highlight"
+	]
+}

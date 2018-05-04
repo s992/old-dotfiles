@@ -1,0 +1,31 @@
+[user]
+  name = NAME
+  email = EMAIL
+[alias]
+  graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  rbc = rebase --continue
+  co = checkout
+  ec = config --global -e
+  ds = diff --staged
+  local-branches = !git branch -vv | cut -c 3- | awk '$3 !~/\\[/ { print $1 }'
+  cp = cherry-pick
+  cpc = cherry-pick --continue
+  cpa = cherry-pick --abort
+  smu = submodule update
+  smui = submodule update --init
+  smuir = submodule update --init --recursive
+  logs = log --oneline --pretty=format:'%C(yellow dim)%h%Creset %s (%C(cyan)%an%Creset %C(dim)%cr%Creset)'
+  ptags = !git push && git push --tags
+  fetch-master = !git fetch && git checkout $(git rev-parse origin/master)
+  cm = commit -m
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+[core]
+  editor = /usr/bin/vi
+  excludesfile = ~/.gitignore
+  trustctime = false
+[status]
+  showUntrackedFiles = all
