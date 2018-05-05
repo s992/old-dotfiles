@@ -97,3 +97,5 @@ for file in ~/.{path,exports,aliases,functions,secrets,aliases_private,functions
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done
 unset file
+
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/27.0.3:$ANDROID_HOME/tools/bin:$PATH"
