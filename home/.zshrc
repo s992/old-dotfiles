@@ -1,6 +1,4 @@
-# Clear all functions and aliases
-unhash -mf "*"
-unhash -ma "*"
+#!/bin/sh
 
 # If you come from bash you might have to change your $PATH.
 export PATH="$HOME/dotfiles/bin:$HOME/.fastlane/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH"

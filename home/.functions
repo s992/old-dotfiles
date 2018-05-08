@@ -1,3 +1,5 @@
+#!/bin/sh
+
 function android-version() {
   ~/Library/Android/sdk/build-tools/25.0.1/aapt dump badging $1 | grep version
 }
@@ -8,4 +10,12 @@ function ctx() {
   else
     kubectl config use-context $1
   fi
+}
+
+function reload-zsh() {
+  # Clear all functions and aliases first so they reload
+  unhash -mf "*"
+  unhash -ma "*"
+
+  source ~/.zshrc
 }

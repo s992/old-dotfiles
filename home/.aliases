@@ -1,5 +1,6 @@
+#!/bin/sh
+
 alias ls='exa -la'
-alias reload-zsh='source ~/.zshrc'
 alias aliases='cat ~/.aliases ~/.aliases_private ~/.functions ~/.functions_private'
 alias apk-version='android-version $APK_DIR/android-release.apk'
 alias point-master='git fetch && git checkout $(git rev-parse origin/master)'
