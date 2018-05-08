@@ -1,3 +1,7 @@
+# Clear all functions and aliases
+unhash -mf "*"
+unhash -ma "*"
+
 # If you come from bash you might have to change your $PATH.
 export PATH="$HOME/.fastlane/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH"
 
@@ -95,7 +99,7 @@ if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then source '~/google-cloud-sdk/pat
 # The next line enables shell command completion for gcloud.
 if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then source '~/google-cloud-sdk/completion.zsh.inc'; fi
 
-for file in ~/.{path,exports,aliases,functions,secrets,aliases_private,functions_private}; do
+for file in $HOME/.{path,exports,aliases,functions,secrets,aliases_private,functions_private}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done
 unset file

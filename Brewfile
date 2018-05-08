@@ -34,6 +34,8 @@ brew "tig"
 brew "the_silver_searcher"
 brew "tree"
 brew "yarn", args: ["without-node"]
+brew "fd"
+brew "task"
 cask "1password"
 cask "android-studio"
 cask "docker"

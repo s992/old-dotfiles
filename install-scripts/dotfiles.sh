@@ -16,6 +16,7 @@ ln -fs $PWD/home/.gitconfig ~/.gitconfig
 ln -fs $PWD/home/.gitignore ~/.gitignore
 ln -fs $PWD/home/.nvmrc ~/.nvmrc
 ln -fs $PWD/home/.secrets ~/.secrets
+ln -fs $PWD/home/.taskrc ~/.taskrc
 ln -fs $PWD/home/.vimrc ~/.vimrc
 ln -fs $PWD/home/.zshenv ~/.zshenv
 ln -fs $PWD/home/.zshrc ~/.zshrc

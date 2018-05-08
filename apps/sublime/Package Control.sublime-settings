@@ -19,7 +19,6 @@
 		"SublimeLinter",
 		"SublimeLinter-tslint",
 		"Swift",
-		"TypeScript",
-		"Vue Syntax Highlight"
+		"TypeScript"
 	]
 }
