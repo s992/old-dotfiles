@@ -5,3 +5,5 @@ alias apk-version='android-version $APK_DIR/android-release.apk'
 alias point-master='git fetch && git checkout $(git rev-parse origin/master)'
 alias ipl='yarn install --pure-lockfile'
 alias build-android='rm -rf build && ./gradlew clean build assembleRelease'
+
+alias -g J='| jq'
