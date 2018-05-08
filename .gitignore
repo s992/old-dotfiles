@@ -3,3 +3,4 @@ home/.aliases_private
 home/.functions_private
 home/.gitconfig
 home/.aws/credentials
+bin/

@@ -3,7 +3,7 @@ unhash -mf "*"
 unhash -ma "*"
 
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/.fastlane/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/dotfiles/bin:$HOME/.fastlane/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
