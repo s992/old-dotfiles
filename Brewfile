@@ -36,6 +36,8 @@ brew "tree"
 brew "yarn", args: ["without-node"]
 brew "fd"
 brew "task"
+brew "tasksh"
+brew "saulpw/vd/visidata"
 cask "1password"
 cask "android-studio"
 cask "docker"

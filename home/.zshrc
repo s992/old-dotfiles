@@ -103,3 +103,5 @@ done
 unset file
 
 export PATH="$HOME/dev/flutter/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/27.0.3:$ANDROID_HOME/tools/bin:$PATH"
+
+eval "$(rbenv init -)"
