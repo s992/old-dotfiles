@@ -2,6 +2,8 @@
 
 export EDITOR="vi"
 export APK_DIR=build/outputs/apk/release
+export TASKDATA=$HOME/Dropbox/apps/taskwarrior
+export BACKUPS=$HOME/Dropbox/backups
 export NOSENTRY=1
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
