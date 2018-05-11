@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/dotfiles/bin:$HOME/.fastlane/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH"
 export PATH="$HOME/dotfiles/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
@@ -105,7 +104,8 @@ unset file
 
 export PATH="$HOME/dev/flutter/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/27.0.3:$ANDROID_HOME/tools/bin:$PATH"
 
-eval "$(rbenv init -)"
+source $HOME/tmuxinator.zsh
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
