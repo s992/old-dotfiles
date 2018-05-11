@@ -20,10 +20,19 @@ report.in.description = Inbox
 report.in.filter = status:pending limit:page (+in)
 report.in.labels = ID,Description
 
+## next
+report.next.filter = status:pending limit:page (-in -rnr)
+
+## rnr
+report.rnr.columns = id,entry.age,description
+report.rnr.description = Read later
+report.rnr.filter = status:pending limit:page (-in +rnr)
+report.rnr.labels = ID,Age,Description
+
 # contexts
 context.se = +@se
 context.release = +@release
-context.work = +@work or +@review or +@release
+context.work = +@work or +@review or +@release or +@se
 context.dev = +@dev
 context.review = +@review
 context.personal = +@personal

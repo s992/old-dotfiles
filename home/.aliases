@@ -7,5 +7,9 @@ alias point-master='git fetch && git checkout $(git rev-parse origin/master)'
 alias ipl='yarn install --pure-lockfile'
 alias build-android='rm -rf build && ./gradlew clean build assembleRelease'
 alias s='git status'
+alias d='git diff'
+alias less='less -m -N -g -i -J --line-numbers --underline-special'
+alias more='less'
+alias cat="highlight $1 --out-format xterm256 --line-numbers --quiet --force --style zenburn"
 
 alias -g J='| jq'

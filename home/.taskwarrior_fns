@@ -14,8 +14,12 @@ function tickle() {
   in +tickle wait:$deadline $@
 }
 
+function ts() {
+  task $1 modify wait:$2
+}
+
 function webpage-title() {
-  wget -qO- "$*" | hxnormalize -x | hxselect -s '\n' -c 'title' 2>/dev/null
+  wget -qO- "$*" | hxnormalize -x -l 99999 | hxselect -s '\n' -c 'title' 2>/dev/null
 }
 
 function read-and-review() {
