@@ -44,6 +44,7 @@ brew "ranger"
 brew "gpg"
 brew "fzf"
 brew "ag"
+brew 'grip'
 cask "1password"
 cask "android-studio"
 cask "docker"
