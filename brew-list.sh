@@ -5,5 +5,5 @@ cat Brewfile |
   awk '{$0=$2} {gsub(/[",]/, "")}1' |
   tr '\n' ' ' |
   xargs brew info --json=v1 |
-  jq -r '.[] | "- [`\(.name)`](\(.homepage)): \(.desc)"' |
+  jq -r 'sort_by(.name) | .[] | "- [`\(.name)`](\(.homepage)): \(.desc)"' |
   pbcopy
