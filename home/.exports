@@ -9,3 +9,4 @@ export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
 export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --quiet --force --style zenburn"
 export LESS=' -R'
+export FZF_DEFAULT_OPTS='--reverse --ansi'

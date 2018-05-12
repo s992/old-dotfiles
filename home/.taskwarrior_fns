@@ -18,6 +18,10 @@ function ts() {
   task $1 modify wait:$2
 }
 
+function tp() {
+  task project:$1
+}
+
 function webpage-title() {
   wget -qO- "$*" | hxnormalize -x -l 99999 | hxselect -s '\n' -c 'title' 2>/dev/null
 }
