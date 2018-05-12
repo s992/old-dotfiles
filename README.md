@@ -9,6 +9,7 @@ I especially recommend against copying anything that configures vim or tmux. I'v
 I don't know what the typical setup is and I'm sure I could improve on this, but here's a short explanation of what the files included are:
 
 - `install.sh`: This runs all of the install scripts in `install-scripts/`
+- `brew-list.sh`: Generates the list of stuff in my Brewfile for the readme
 - `Brewfile`: All my Brew stuff
 - `apps/`: Config for various applications that isn't well represented by dotfile stuff
 - `bin/`: Intentionally left empty and gitignored, I have some private scripts in there
@@ -29,7 +30,7 @@ This contains some basic AWS config for the official AWS CLI.
 - `d`: `git diff`
 - `less`: Less, but with syntax highlighting
 - `more`: `less`
-- `cat`: Cat, but with syntax highlighting
+- `hcat`: Cat, but with syntax highlighting
 - `ag`: Make ag include ~/.ignore by default
 - `J`: Pipe something to `jq`. Example: `cat thing.json J`
 
@@ -67,3 +68,44 @@ Mostly only useful for the aliases:
 ### `home/.taskwarrior_fns`
 These are just functions specific to Taskwarrior that I wanted to separate out.
 
+## Brewfile
+Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out how to parse out casks or mas installs.
+
+- [`android-platform-tools`](https://developer.android.com/sdk): Tools for the Android SDK
+- [`awscli`](https://aws.amazon.com/cli/): Official Amazon AWS command-line interface
+- [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
+- [`cmake`](https://www.cmake.org/): Cross-platform make
+- [`cocoapods`](https://cocoapods.org/): Dependency manager for Cocoa projects
+- [`curl`](https://curl.haxx.se/): Get a file from an HTTP, HTTPS or FTP server
+- [`docker-clean`](https://github.com/ZZROTDesign/docker-clean): Clean Docker containers, images, networks, and volumes
+- [`exa`](https://the.exa.website): Modern replacement for 'ls'
+- [`exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/index.html): Perl lib for reading and writing EXIF metadata
+- [`git`](https://git-scm.com): Distributed revision control system
+- [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
+- [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
+- [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
+- [`gradle`](https://www.gradle.org/): Build system based on the Groovy language
+- [`jq`](https://stedolan.github.io/jq/): Lightweight and flexible command-line JSON processor
+- [`libimobiledevice`](https://www.libimobiledevice.org/): Library to communicate with iOS devices natively
+- [`ideviceinstaller`](https://www.libimobiledevice.org/): Cross-platform library for communicating with iOS devices
+- [`imagemagick`](https://www.imagemagick.org/): Tools and libraries to manipulate images in many formats
+- [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
+- [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
+- [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
+- [`make`](https://www.gnu.org/software/make/): Utility for directing compilation
+- [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
+- [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
+- [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
+- [`rbenv`](https://github.com/rbenv/rbenv#readme): Ruby version manager
+- [`tig`](https://jonas.github.io/tig/): Text interface for Git repositories
+- [`the_silver_searcher`](https://github.com/ggreer/the_silver_searcher): Code-search similar to ack
+- [`tree`](http://mama.indstate.edu/users/ice/tree/): Display directories as trees (with optional color/HTML output)
+- [`yarn`](https://yarnpkg.com/): JavaScript package manager
+- [`fd`](https://github.com/sharkdp/fd): Simple, fast and user-friendly alternative to find
+- [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
+- [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
+- [`visidata`](http://visidata.org/): Terminal utility for exploring and arranging tabular data
+- [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
+- [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
+- [`ranger`](https://ranger.github.io): File browser
+- [`fzf`](https://github.com/junegunn/fzf): Command-line fuzzy finder written in Go

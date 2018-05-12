@@ -20,11 +20,11 @@ function reload-zsh() {
   source ~/.zshrc
 }
 
-fh() {
+function fh() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
-fco() {
+function fco() {
   local tags branches target
   tags=$(git tag | awk '{print "\x1b[31;1mtag\x1b[m\t" $1}') || return
   branches=$(
@@ -41,7 +41,7 @@ fco() {
   git checkout $(echo "$target" | awk '{print $2}')
 }
 
-fshow() {
+function fshow() {
   git logs |
   fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
       --bind "ctrl-m:execute:
