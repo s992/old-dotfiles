@@ -21,7 +21,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " generic coding
 Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 " Markdown / Writting
 Plugin 'reedes/vim-pencil'
@@ -35,7 +35,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'skielbasa/vim-material-monokai'
 
 " typescript
-Plugin 'Quramy/tsuquyomi'
 Plugin 'leafgarland/typescript-vim'
 
 set backspace=indent,eol,start
@@ -50,6 +49,7 @@ set shiftwidth=2
 set smarttab
 set expandtab
 set laststatus=2
+set cursorline
 
 set background=dark
 
@@ -67,15 +67,9 @@ let g:airline_theme='materialmonokai'
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1
 
-" Syntastic Configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint --type-check']
+" Ale Configuration
+let g:ale_completion_enabled = 1
+let g:airline#extensions#ale#enabled = 1
 
 " Markdown Syntax Support
 augroup markdown
@@ -83,10 +77,7 @@ augroup markdown
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
 
-" Vim-Supertab Configuration
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-
-" Settings for Writting
+" Settings for Writing
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
 
 " Vim-pencil Configuration
@@ -154,6 +145,9 @@ endfunction
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
+map <S-F12> :ALEFindReferences<CR>
+map <F12> :ALEGoToDefinition<CR>
+map <C-i> :ALEHover<CR>
 
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")
@@ -196,6 +190,6 @@ endif
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
-" ligatures
-"set macligatures
-"set guifont=Fira\ Code:h12
+" ligatures - why doesnt this work? :(
+" set macligatures
+" set guifont=Fira\ Code:h12
