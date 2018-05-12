@@ -11,5 +11,6 @@ alias d='git diff'
 alias less='less -m -N -g -i -J --line-numbers --underline-special'
 alias more='less'
 alias cat="highlight $1 --out-format xterm256 --line-numbers --quiet --force --style zenburn"
+alias ag='ag -p ~/.ignore'
 
 alias -g J='| jq'

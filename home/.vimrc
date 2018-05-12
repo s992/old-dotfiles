@@ -17,6 +17,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
 Plugin 'godlygeek/tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
@@ -183,9 +184,7 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
 " ctrlp.vim
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'

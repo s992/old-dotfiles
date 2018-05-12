@@ -1,0 +1,7 @@
+*/tmp/*
+*.so
+*.swp
+*.zip
+node_modules/
+DS_Store/
+.git/
