@@ -40,6 +40,7 @@ context.personal = +@personal
 # aliases
 alias.rm=delete
 alias.note=annotate
+alias.m=modify
 
 # coefficients
 urgency.user.tag.in.coefficient=15.0
