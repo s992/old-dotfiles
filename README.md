@@ -87,7 +87,9 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
 - [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
 - [`gradle`](https://www.gradle.org/): Build system based on the Groovy language
+- [`grip`](https://github.com/joeyespo/grip): GitHub Markdown previewer
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
+- [`httpie`](https://httpie.org/): User-friendly cURL replacement (command-line HTTP client)
 - [`ideviceinstaller`](https://www.libimobiledevice.org/): Cross-platform library for communicating with iOS devices
 - [`imagemagick`](https://www.imagemagick.org/): Tools and libraries to manipulate images in many formats
 - [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
@@ -109,3 +111,5 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`visidata`](http://visidata.org/): Terminal utility for exploring and arranging tabular data
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
+
+
