@@ -2,7 +2,6 @@
 	"always_show_minimap_viewport": true,
 	"binary_file_patterns":
 	[
-		"*.js",
 		"node_modules/"
 	],
 	"bold_folder_labels": true,
