@@ -33,6 +33,7 @@ Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tomasr/molokai'
 Plugin 'skielbasa/vim-material-monokai'
 
 " typescript
@@ -51,6 +52,10 @@ set smarttab
 set expandtab
 set laststatus=2
 set cursorline
+set lazyredraw
+set showmatch
+set incsearch
+set hlsearch
 
 set background=dark
 
@@ -58,8 +63,7 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-colorscheme material-monokai
-let g:materialmonokai_italic=1
+colorscheme molokai
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
@@ -71,6 +75,9 @@ let g:hybrid_reduced_contrast = 1
 " Ale Configuration
 let g:ale_completion_enabled = 1
 let g:airline#extensions#ale#enabled = 1
+let g:ale_fixers = {
+\ 'typescript': ['tslint'],
+\}
 
 " Markdown Syntax Support
 augroup markdown
@@ -107,13 +114,8 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-" Default fzf layout
-" - down / up / left / right
-let g:fzf_layout = { 'down': '~40%' }
-
 " In Neovim, you can set up fzf window using a Vim command
 let g:fzf_layout = { 'window': 'enew' }
-let g:fzf_layout = { 'window': '-tabnew' }
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -170,6 +172,12 @@ omap <leader><tab> <plug>(fzf-maps-o)
 nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>O :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap B ^
+nnoremap E $
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <C-r> :BLines<CR>
 
 " Insert mode completion
 imap <c-x><c-k> <plug>(fzf-complete-word)
@@ -185,10 +193,12 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 " ctrlp.vim
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_switch_buffer = 0
 
-" ligatures - why doesnt this work? :(
-" set macligatures
-" set guifont=Fira\ Code:h12
+" ligatures
+if (has("gui_running"))
+  set macligatures
+  set guifont=FuraCode\ Nerd\ Font:h14
+endif
