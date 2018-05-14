@@ -18,6 +18,7 @@ Plugin 'junegunn/fzf'
 Plugin 'godlygeek/tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'majutsushi/tagbar'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
@@ -144,6 +145,25 @@ function! s:my_cr_function()
   "return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 
+" Tagbar
+let g:tagbar_type_typescript = {
+\  'ctagsbin': 'ctags',
+\  'kinds': [
+\    'e:enums:0:1',
+\    'f:function:0:1',
+\    't:typealias:0:1',
+\    'M:Module:0:1',
+\    'I:import:0:1',
+\    'i:interface:0:1',
+\    'C:class:0:1',
+\    'm:method:0:1',
+\    'p:property:0:1',
+\    'v:variable:0:1',
+\    'c:const:0:1',
+\  ],
+\  'sort': 0,
+\}
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -151,6 +171,8 @@ map <C-n> :NERDTreeToggle<CR>
 map <S-F12> :ALEFindReferences<CR>
 map <F12> :ALEGoToDefinition<CR>
 map <C-i> :ALEHover<CR>
+map <F8> :TagbarToggle<CR>
+map <leader>r :BTags<CR>
 
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")
