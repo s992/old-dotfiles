@@ -102,14 +102,15 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
 - [`ranger`](https://ranger.github.io): File browser
 - [`rbenv`](https://github.com/rbenv/rbenv#readme): Ruby version manager
+- [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
 - [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
 - [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
 - [`the_silver_searcher`](https://github.com/ggreer/the_silver_searcher): Code-search similar to ack
 - [`tig`](https://jonas.github.io/tig/): Text interface for Git repositories
 - [`tree`](http://mama.indstate.edu/users/ice/tree/): Display directories as trees (with optional color/HTML output)
+- [`universal-ctags`](https://github.com/universal-ctags/ctags): Maintained ctags implementation
 - [`visidata`](http://visidata.org/): Terminal utility for exploring and arranging tabular data
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
-
-
+- [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh

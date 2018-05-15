@@ -19,6 +19,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'majutsushi/tagbar'
+Plugin 'ervandew/supertab'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
@@ -39,6 +40,11 @@ Plugin 'skielbasa/vim-material-monokai'
 
 " typescript
 Plugin 'leafgarland/typescript-vim'
+
+" ios
+" Plugin 'Rip-Rip/clang_complete'
+" Plugin 'eraserhd/vim-ios'
+Plugin 'keith/swift.vim'
 
 set backspace=indent,eol,start
 
@@ -139,30 +145,31 @@ let g:fzf_colors =
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
-endfunction
+" Supertab
+let g:SuperTabCrMapping = 1
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " Tagbar
-let g:tagbar_type_typescript = {
-\  'ctagsbin': 'ctags',
-\  'kinds': [
-\    'e:enums:0:1',
-\    'f:function:0:1',
-\    't:typealias:0:1',
-\    'M:Module:0:1',
-\    'I:import:0:1',
-\    'i:interface:0:1',
-\    'C:class:0:1',
-\    'm:method:0:1',
-\    'p:property:0:1',
-\    'v:variable:0:1',
-\    'c:const:0:1',
-\  ],
-\  'sort': 0,
-\}
+"let g:tagbar_type_typescript = {
+"\  'ctagsbin': 'ctags',
+"\  'ctagsargs': '',
+"\  'kinds': [
+"\   'C:classes:0:1',
+"\   'c:modules:0:1',
+"\   'n:modules:0:1',
+"\   'f:functions:0:1',
+"\   'V:variables:0:1',
+"\   'v:varlambdas:0:1',
+"\   'm:members:0:1',
+"\   'i:interfaces:0:1',
+"\   't:types:0:1',
+"\   'e:enums:0:1',
+"\   'I:imports:0:1',
+"\   'M:methods:0:1',
+"\  ],
+"\  'sort': 0,
+"\}
 
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
@@ -177,13 +184,6 @@ map <leader>r :BTags<CR>
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Mapping selecting Mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
