@@ -35,7 +35,7 @@ function fco() {
   target=$(
     (echo "$tags"; echo "$branches") |
     fzf --no-hscroll --no-multi --delimiter="\t" -n 2 \
-        --ansi --preview="git logs -200 $(echo {+2..} | awk '{print ".."$0}')"
+        --ansi --preview="git logs -200 $(echo {+2..} | awk '{print ".."$0}') 2>/dev/null || git logs -200 $(echo {+2..} | awk '{print "..origin/"$0}')"
   ) || return
 
   git checkout $(echo "$target" | awk '{print $2}')
