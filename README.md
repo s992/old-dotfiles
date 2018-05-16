@@ -86,6 +86,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
 - [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
+- [`go`](https://golang.org): Open source programming language to build simple/reliable/efficient software
 - [`gradle`](https://www.gradle.org/): Build system based on the Groovy language
 - [`grip`](https://github.com/joeyespo/grip): GitHub Markdown previewer
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
@@ -99,10 +100,12 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`libimobiledevice`](https://www.libimobiledevice.org/): Library to communicate with iOS devices natively
 - [`make`](https://www.gnu.org/software/make/): Utility for directing compilation
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
+- [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
 - [`ranger`](https://ranger.github.io): File browser
 - [`rbenv`](https://github.com/rbenv/rbenv#readme): Ruby version manager
 - [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
+- [`rust`](https://www.rust-lang.org/): Safe, concurrent, practical language
 - [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
 - [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
@@ -114,3 +117,4 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
+

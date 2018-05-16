@@ -12,6 +12,8 @@
 ./install-scripts/vscode.sh
 ./install-scripts/sublime.sh
 ./install-scripts/chrome.sh
+./install-scripts/ranger.sh
+./install-scripts/neovim.sh
 ./install-scripts/dotfiles.sh
 
 echo "Manual steps:"

@@ -42,8 +42,8 @@ Plugin 'skielbasa/vim-material-monokai'
 Plugin 'leafgarland/typescript-vim'
 
 " ios
-" Plugin 'Rip-Rip/clang_complete'
-" Plugin 'eraserhd/vim-ios'
+Plugin 'Rip-Rip/clang_complete'
+Plugin 'eraserhd/vim-ios'
 Plugin 'keith/swift.vim'
 
 set backspace=indent,eol,start
@@ -63,6 +63,7 @@ set lazyredraw
 set showmatch
 set incsearch
 set hlsearch
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 set background=dark
 
@@ -70,7 +71,17 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+" ligatures
+if (has("gui_running"))
+  set macligatures
+  set guifont=FuraCode\ Nerd\ Font:h14
+endif
+
 colorscheme molokai
+
+"""""""""""""""""""""""""""""""""""""
+" Plugin Config
+"""""""""""""""""""""""""""""""""""""
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
@@ -171,11 +182,24 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 "\  'sort': 0,
 "\}
 
+" clang_complete
+let g:clang_library_path="/Library/Developer/CommandLineTools/usr/lib/libclang.dylib"
+
+" ctrlp.vim
+let g:ctrlp_use_caching = 0
+let g:ctrlp_max_files = 10000
+let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_user_command = 'ag %s -l -i --nogroup --nocolor --hidden -g ""'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_switch_buffer = 0
+
+
 """""""""""""""""""""""""""""""""""""
-" Mappings configurationn
+" Mappings config
 """""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
 map <S-F12> :ALEFindReferences<CR>
+map <F24> :ALEFindReferences<CR> 
 map <F12> :ALEGoToDefinition<CR>
 map <C-i> :ALEHover<CR>
 map <F8> :TagbarToggle<CR>
@@ -206,21 +230,9 @@ imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
-
+ 
 map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
-" ctrlp.vim
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-let g:ctrlp_switch_buffer = 0
-
-" ligatures
-if (has("gui_running"))
-  set macligatures
-  set guifont=FuraCode\ Nerd\ Font:h14
-endif
