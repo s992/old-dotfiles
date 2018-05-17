@@ -118,4 +118,5 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
+- [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
 

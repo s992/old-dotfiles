@@ -109,3 +109,18 @@ source $HOME/tmuxinator.zsh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# syntax highlighting rules
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_STYLES[cursor]='bold'
+
+ZSH_HIGHLIGHT_STYLES[alias]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[function]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green,bold'
