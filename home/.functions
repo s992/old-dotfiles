@@ -20,6 +20,15 @@ function reload-zsh() {
   source ~/.zshrc
 }
 
+function plogcat() {
+  local pid=$(adb shell ps | rg "$1" | cut -c10-15)
+  adb logcat | rg "$pid"
+}
+
+function pyenv() {
+  source "$HOME/virtualenvs/$1/bin/activate"
+}
+
 function fh() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }

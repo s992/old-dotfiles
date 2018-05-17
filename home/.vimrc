@@ -20,6 +20,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
@@ -42,7 +44,6 @@ Plugin 'skielbasa/vim-material-monokai'
 Plugin 'leafgarland/typescript-vim'
 
 " ios
-Plugin 'Rip-Rip/clang_complete'
 Plugin 'eraserhd/vim-ios'
 Plugin 'keith/swift.vim'
 
@@ -61,20 +62,42 @@ set laststatus=2
 set cursorline
 set lazyredraw
 set showmatch
+set ignorecase
+set smartcase
 set incsearch
 set hlsearch
+set scrolloff=10
+set updatetime=1000
+set clipboard=unnamed
+set relativenumber
+set hidden
+set switchbuf=useopen
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+set nobackup
+set nowb
+set noswapfile
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-
 set background=dark
 
 if (has("termguicolors"))
   set termguicolors
 endif
 
+if (has("gui_macvim"))
+  autocmd GUIEnter * set vb t_vb=
+endif
+
 " ligatures
 if (has("gui_running"))
   set macligatures
   set guifont=FuraCode\ Nerd\ Font:h14
+endif
+
+if (executable("ag"))
+  set grepprg=ag\ --nogroup\ --nocolor
 endif
 
 colorscheme molokai
@@ -182,9 +205,6 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 "\  'sort': 0,
 "\}
 
-" clang_complete
-let g:clang_library_path="/Library/Developer/CommandLineTools/usr/lib/libclang.dylib"
-
 " ctrlp.vim
 let g:ctrlp_use_caching = 0
 let g:ctrlp_max_files = 10000
@@ -192,7 +212,6 @@ let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_user_command = 'ag %s -l -i --nogroup --nocolor --hidden -g ""'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_switch_buffer = 0
-
 
 """""""""""""""""""""""""""""""""""""
 " Mappings config
@@ -204,6 +223,11 @@ map <F12> :ALEGoToDefinition<CR>
 map <C-i> :ALEHover<CR>
 map <F8> :TagbarToggle<CR>
 map <leader>r :BTags<CR>
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+map <leader>gb :Gblame<CR>
 
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")

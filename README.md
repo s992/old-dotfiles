@@ -101,6 +101,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`make`](https://www.gnu.org/software/make/): Utility for directing compilation
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
 - [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
+- [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
 - [`ranger`](https://ranger.github.io): File browser
 - [`rbenv`](https://github.com/rbenv/rbenv#readme): Ruby version manager
