@@ -228,6 +228,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <leader>gb :Gblame<CR>
+nnoremap x d
+vnoremap x d
+nnoremap d "_d
+vnoremap d "_d
 
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")
