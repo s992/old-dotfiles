@@ -21,6 +21,7 @@ ln -fs $PWD/home/.secrets ~/.secrets
 ln -fs $PWD/home/.taskrc ~/.taskrc
 ln -fs $PWD/home/.taskwarrior_fns ~/.taskwarrior_fns
 ln -fs $PWD/home/.tmux/.tmux.conf ~/.tmux.conf
+ln -fs $PWD/home/.tmux/.tmux.conf.local ~/.tmux.conf.local
 ln -fs $PWD/home/tmuxinator.zsh ~/tmuxinator.zsh
 ln -fs $PWD/home/.vim ~/vimrc
 ln -fs $PWD/home/.vimrc ~/.vimrc

@@ -265,3 +265,10 @@ tmux_conf_copy_to_os_clipboard=true
 
 # move status line to top
 #set -g status-position top
+
+set -g @tpm_plugins ' \
+  tmux-plugins/tpm \
+'
+
+run '~/.tmux/plugins/tpm/tpm'
+
