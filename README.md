@@ -81,6 +81,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`exa`](https://the.exa.website): Modern replacement for 'ls'
 - [`exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/index.html): Perl lib for reading and writing EXIF metadata
 - [`fd`](https://github.com/sharkdp/fd): Simple, fast and user-friendly alternative to find
+- [`fpp`](https://facebook.github.io/PathPicker/): CLI program that accepts piped input and presents files for selection
 - [`fzf`](https://github.com/junegunn/fzf): Command-line fuzzy finder written in Go
 - [`git`](https://git-scm.com): Distributed revision control system
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
@@ -107,6 +108,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`rbenv`](https://github.com/rbenv/rbenv#readme): Ruby version manager
 - [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
 - [`rust`](https://www.rust-lang.org/): Safe, concurrent, practical language
+- [`sourcekitten`](https://github.com/jpsim/SourceKitten): Framework and command-line tool for interacting with SourceKit
 - [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
 - [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
@@ -119,4 +121,3 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
-
