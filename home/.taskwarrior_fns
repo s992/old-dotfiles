@@ -7,6 +7,7 @@ alias tick=tickle
 alias think='tickle +1d'
 alias review='task add +next +@review'
 alias rnr=read-and-review
+alias work='task add +next +@work'
 
 function tickle() {
   deadline=$1

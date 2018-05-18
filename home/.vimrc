@@ -11,6 +11,14 @@ call vundle#begin()
 " let vundle manage vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+if (has('nvim'))
+  Plugin 'Shougo/deoplete.nvim'
+else
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
+
 " utility
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf.vim'
@@ -22,6 +30,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'MattesGroeger/vim-bookmarks'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
@@ -42,10 +51,15 @@ Plugin 'skielbasa/vim-material-monokai'
 
 " typescript
 Plugin 'leafgarland/typescript-vim'
+Plugin 'mhartington/nvim-typescript'
 
 " ios
 Plugin 'eraserhd/vim-ios'
 Plugin 'keith/swift.vim'
+
+" python
+Plugin 'davidhalter/jedi-vim'
+Plugin 'zchee/deoplete-jedi'
 
 set backspace=indent,eol,start
 
@@ -119,6 +133,11 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_fixers = {
 \ 'typescript': ['tslint'],
 \}
+
+" deoplete stuff
+let g:deoplete#enable_at_startup = 1
+let g:python_host_prog = '/Users/seanwalsh/virtualenvs/nvim/bin/python'
+let g:python3_host_prog = '/Users/seanwalsh/virtualenvs/nvim3/bin/python'
 
 " Markdown Syntax Support
 augroup markdown
@@ -213,11 +232,15 @@ let g:ctrlp_user_command = 'ag %s -l -i --nogroup --nocolor --hidden -g ""'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_switch_buffer = 0
 
+" jedi
+let g:jedi#goto_command = "<F12>"
+let g:jedi#usages_command = "<F24>"
+let g:jedi#documentation_command = "<C-i>"
+
 """""""""""""""""""""""""""""""""""""
 " Mappings config
 """""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
-map <S-F12> :ALEFindReferences<CR>
 map <F24> :ALEFindReferences<CR> 
 map <F12> :ALEGoToDefinition<CR>
 map <C-i> :ALEHover<CR>
@@ -228,10 +251,20 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <leader>gb :Gblame<CR>
-nnoremap x d
-vnoremap x d
+nnoremap <C-x> d
+vnoremap <C-x> d
 nnoremap d "_d
 vnoremap d "_d
+
+" typescript mappings
+augroup typescript
+  autocmd!
+  autocmd FileType typescript map <F12> :TSTypeDef<CR>
+  autocmd FileType typescript map <F24> :TSRefs<CR>
+  autocmd FileType typescript map <C-i> :TSType<CR>
+  autocmd FileType typescript map <leader>i :TSImport<CR>
+  autocmd FileType typescript map <F2> :TSRename<CR>
+augroup END
 
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")
