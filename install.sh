@@ -22,3 +22,6 @@ echo " -> Add necessary secrets to home/.secrets"
 echo " -> Add AWS credentials to home/aws/credentials"
 echo " -> Add home/.functions_private and home/.aliases_private"
 echo " -> Install RVM"
+echo " -> Import apps/iterm2/Relaxed.itermcolors"
+echo " -> Update iTerm2 settings directory"
+
