@@ -16,19 +16,21 @@ endif
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
-Plugin 'godlygeek/tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'MattesGroeger/vim-bookmarks'
+Plugin 'thaerkh/vim-workspace'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'w0rp/ale'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'metakirby5/codi.vim'
 
 " Markdown / Writting
 Plugin 'reedes/vim-pencil'
@@ -37,10 +39,12 @@ Plugin 'jtratner/vim-flavored-markdown'
 
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tomasr/molokai'
 Plugin 'skielbasa/vim-material-monokai'
+Plugin 'itchyny/lightline.vim'
+Plugin 'mgee/lightline-bufferline'
 
 " typescript
 Plugin 'leafgarland/typescript-vim'

@@ -8,9 +8,10 @@ alias think='tickle +1d'
 alias review='task add +next +@review'
 alias rnr=read-and-review
 alias work='task add +next +@work'
+alias future='task add +next +@work +@future'
 
 function tickle() {
-  deadline=$1
+  local deadline=$1
   shift
   in +tickle wait:$deadline $@
 }
@@ -28,10 +29,10 @@ function webpage-title() {
 }
 
 function read-and-review() {
-  link="$1"
-  title=$(webpage-title $link)
+  local link="$1"
+  local title=$(webpage-title $link)
   echo $title
-  descr="\"Read and review: $title\""
-  id=$(task add +next +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
+  local descr="\"Read and review: $title\""
+  local id=$(task add +next +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
   task "$id" annotate "$link"
 }

@@ -21,13 +21,19 @@ report.in.filter = status:pending limit:page (+in)
 report.in.labels = ID,Description
 
 ## next
-report.next.filter = status:pending limit:page (-in -rnr)
+report.next.filter = status:pending limit:page (-in -rnr -@future)
 
 ## rnr
 report.rnr.columns = id,entry.age,description
 report.rnr.description = Read later
 report.rnr.filter = status:pending limit:page (-in +rnr)
 report.rnr.labels = ID,Age,Description
+
+## future work/notes
+report.future.columns = id,entry.age,project,description
+report.future.description = Future work or notes
+report.future.filter = status:pending limit:page (-in +@future)
+report.future.labels = ID,Age,Project,Description
 
 # contexts
 context.se = +@se

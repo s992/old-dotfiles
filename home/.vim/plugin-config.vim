@@ -3,11 +3,23 @@
 """""""""""""""""""""""""""""""""""""
 
 " Vim-Airline Configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme='materialmonokai'
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1
+" let g:airline_theme='materialmonokai'
+" let g:hybrid_custom_term_colors = 1
+" let g:hybrid_reduced_contrast = 1
+
+" lightline config
+let g:lightline#bufferline#show_number = 0
+let g:lightline#bufferline#shorten_path = 1
+let g:lightline#bufferline#unnamed = '[No Name]'
+
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+let g:lightline.tabline = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type = {'buffers': 'tabsel'}
 
 " Ale Configuration
 let g:ale_completion_enabled = 1
@@ -36,18 +48,6 @@ augroup pencil
   autocmd FileType markdown,mkd call pencil#init()
   autocmd FileType text         call pencil#init()
 augroup END
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" Enable heavy omni completion.
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
 
 " Fzf Configuration
 " This is the default extra key bindings
@@ -118,4 +118,10 @@ let g:ctrlp_switch_buffer = 0
 let g:jedi#goto_command = "<F12>"
 let g:jedi#usages_command = "<F24>"
 let g:jedi#documentation_command = "<C-i>"
+
+" rainbow parens
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 

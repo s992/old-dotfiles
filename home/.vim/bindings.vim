@@ -58,3 +58,6 @@ map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
+" workspace
+nnoremap <leader>a :ToggleWorkspace<CR>
+

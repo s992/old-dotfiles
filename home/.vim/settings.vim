@@ -22,6 +22,8 @@ set clipboard=unnamed
 set relativenumber
 set hidden
 set switchbuf=useopen
+set noshowmode
+set showtabline=2
 set noerrorbells
 set novisualbell
 set t_vb=
@@ -53,4 +55,6 @@ endif
 colorscheme molokai
 
 autocmd BufNewFile,BufRead *.vim setf vim 
+
+let g:loaded_matchparen = 1
 
