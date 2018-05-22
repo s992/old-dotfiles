@@ -11,10 +11,32 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 map <leader>gb :Gblame<CR>
+map <leader>b :BuffergatorToggle<CR>
+map <leader>t :BuffergatorTabsToggle<CR>
 nnoremap <C-x> d
 vnoremap <C-x> d
 nnoremap d "_d
 vnoremap d "_d
+
+" if has('nvim')
+"   tnoremap <Esc> <C-\><C-n>
+"   tnoremap <C-a>h <C-\><C-N><C-w>h
+"   tnoremap <C-a>j <C-\><C-N><C-w>j
+"   tnoremap <C-a>k <C-\><C-N><C-w>k
+"   tnoremap <C-a>l <C-\><C-N><C-w>l
+"   tnoremap <C-a>x <C-\><C-N>:bd!<CR>
+" endif
+"
+" inoremap <C-a>h <C-\><C-N><C-w>h
+" inoremap <C-a>j <C-\><C-N><C-w>j
+" inoremap <C-a>k <C-\><C-N><C-w>k
+" inoremap <C-a>l <C-\><C-N><C-w>l
+" nnoremap <C-a>h <C-w>h
+" nnoremap <C-a>j <C-w>j
+" nnoremap <C-a>k <C-w>k
+" nnoremap <C-a>l <C-w>l
+" nnoremap <C-a>x :bd!<CR>
+" nnoremap <C-a>q :180vsplit | terminal<CR>
 
 " typescript mappings
 augroup typescript

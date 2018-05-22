@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'thaerkh/vim-workspace'
 Plugin 'easymotion/vim-easymotion'
+" Plugin 'BurningEther/nvimux'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
