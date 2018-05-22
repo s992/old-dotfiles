@@ -11,7 +11,6 @@ set expandtab
 set laststatus=2
 set cursorline
 set lazyredraw
-set showmatch
 set ignorecase
 set smartcase
 set incsearch
@@ -53,8 +52,6 @@ if (executable("ag"))
 endif
 
 colorscheme molokai
-
-autocmd BufNewFile,BufRead *.vim setf vim 
 
 let g:loaded_matchparen = 1
 

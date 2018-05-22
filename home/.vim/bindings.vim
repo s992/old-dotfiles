@@ -5,7 +5,6 @@ map <C-n> :NERDTreeToggle<CR>
 map <F24> :ALEFindReferences<CR> 
 map <F12> :ALEGoToDefinition<CR>
 map <C-i> :ALEHover<CR>
-map <F8> :TagbarToggle<CR>
 map <leader>r :BTags<CR>
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -39,7 +38,6 @@ omap <leader><tab> <plug>(fzf-maps-o)
 " Shortcuts
 nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>O :CtrlP<CR>
-nnoremap <Leader>w :w<CR>
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap B ^
 nnoremap E $
@@ -53,11 +51,16 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
  
-map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
-
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
 " workspace
 nnoremap <leader>a :ToggleWorkspace<CR>
+
+" easymotion
+map <leader>f <Plug>(easymotion-bd-f)
+nmap <leader>f <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
+map <leader>w <Plug>(easymotion-bd-w)
+nmap <leader>w <Plug>(easymotion-overwin-w)
 

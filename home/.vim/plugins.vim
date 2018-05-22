@@ -23,6 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'thaerkh/vim-workspace'
+Plugin 'easymotion/vim-easymotion'
 
 " generic coding
 Plugin 'Townk/vim-autoclose'
@@ -48,7 +49,7 @@ Plugin 'mgee/lightline-bufferline'
 
 " typescript
 Plugin 'leafgarland/typescript-vim'
-Plugin 'mhartington/nvim-typescript'
+" Plugin 'mhartington/nvim-typescript'
 
 " ios
 Plugin 'eraserhd/vim-ios'
