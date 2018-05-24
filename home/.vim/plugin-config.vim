@@ -2,13 +2,6 @@
 " Plugin Config
 """""""""""""""""""""""""""""""""""""
 
-" Vim-Airline Configuration
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline_powerline_fonts = 1
-" let g:airline_theme='materialmonokai'
-" let g:hybrid_custom_term_colors = 1
-" let g:hybrid_reduced_contrast = 1
-
 " lightline config
 let g:lightline#bufferline#show_number = 0
 let g:lightline#bufferline#shorten_path = 1
@@ -22,16 +15,19 @@ let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type = {'buffers': 'tabsel'}
 
 " Ale Configuration
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0
 let g:airline#extensions#ale#enabled = 1
 let g:ale_fixers = {
 \ 'typescript': ['tslint'],
 \}
 
-" deoplete stuff
+" deoplete
 let g:deoplete#enable_at_startup = 1
 let g:python_host_prog = '/Users/seanwalsh/virtualenvs/nvim/bin/python'
 let g:python3_host_prog = '/Users/seanwalsh/virtualenvs/nvim3/bin/python'
+
+" language server
+let g:LanguageClient_serverCommands = {'typescript': ['javascript-typescript-stdio']}
 
 " Markdown Syntax Support
 augroup markdown
@@ -84,27 +80,6 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 let g:SuperTabCrMapping = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
-
-" Tagbar
-"let g:tagbar_type_typescript = {
-"\  'ctagsbin': 'ctags',
-"\  'ctagsargs': '',
-"\  'kinds': [
-"\   'C:classes:0:1',
-"\   'c:modules:0:1',
-"\   'n:modules:0:1',
-"\   'f:functions:0:1',
-"\   'V:variables:0:1',
-"\   'v:varlambdas:0:1',
-"\   'm:members:0:1',
-"\   'i:interfaces:0:1',
-"\   't:types:0:1',
-"\   'e:enums:0:1',
-"\   'I:imports:0:1',
-"\   'M:methods:0:1',
-"\  ],
-"\  'sort': 0,
-"\}
 
 " ctrlp.vim
 let g:ctrlp_use_caching = 0

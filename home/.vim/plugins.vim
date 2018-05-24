@@ -1,64 +1,57 @@
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let vundle manage vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 
-if (has('nvim'))
-  Plugin 'Shougo/deoplete.nvim'
-else
-  Plugin 'Shougo/deoplete.nvim'
-  Plugin 'roxma/nvim-yarp'
-  Plugin 'roxma/vim-hug-neovim-rpc'
+if (!has('nvim'))
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
 " utility
-Plugin 'scrooloose/nerdtree'
-Plugin 'junegunn/fzf.vim'
-Plugin 'junegunn/fzf'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'ervandew/supertab'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'MattesGroeger/vim-bookmarks'
-Plugin 'thaerkh/vim-workspace'
-Plugin 'easymotion/vim-easymotion'
-" Plugin 'BurningEther/nvimux'
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'ervandew/supertab'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'MattesGroeger/vim-bookmarks'
+Plug 'thaerkh/vim-workspace'
+Plug 'easymotion/vim-easymotion'
 
 " generic coding
-Plugin 'Townk/vim-autoclose'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'w0rp/ale'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'metakirby5/codi.vim'
+Plug 'Townk/vim-autoclose'
+Plug 'tomtom/tcomment_vim'
+Plug 'w0rp/ale'
+Plug 'tpope/vim-surround'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'metakirby5/codi.vim'
+Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 
 " Markdown / Writting
-Plugin 'reedes/vim-pencil'
-Plugin 'tpope/vim-markdown'
-Plugin 'jtratner/vim-flavored-markdown'
+Plug 'reedes/vim-pencil'
+Plug 'tpope/vim-markdown'
+Plug 'jtratner/vim-flavored-markdown'
 
 " Theme / Interface
-Plugin 'ryanoasis/vim-devicons'
-" Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tomasr/molokai'
-Plugin 'skielbasa/vim-material-monokai'
-Plugin 'itchyny/lightline.vim'
-Plugin 'mgee/lightline-bufferline'
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tomasr/molokai'
+Plug 'skielbasa/vim-material-monokai'
+Plug 'itchyny/lightline.vim'
+Plug 'mgee/lightline-bufferline'
 
 " typescript
-Plugin 'leafgarland/typescript-vim'
-" Plugin 'mhartington/nvim-typescript'
+Plug 'leafgarland/typescript-vim'
 
 " ios
-Plugin 'eraserhd/vim-ios'
-Plugin 'keith/swift.vim'
+Plug 'eraserhd/vim-ios'
+Plug 'keith/swift.vim'
 
 " python
-Plugin 'davidhalter/jedi-vim'
-Plugin 'zchee/deoplete-jedi'
+Plug 'davidhalter/jedi-vim'
+Plug 'zchee/deoplete-jedi'
 
-call vundle#end()
+call plug#end()
 
