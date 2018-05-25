@@ -6,15 +6,21 @@
 	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"font_face": "Fira Code",
 	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage"
+		"Six",
+		"Vintage",
+		"Vintageous"
 	],
 	"scroll_past_end": true,
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"vintageous_modeline": true,
+	"vintageous_use_ctrl_keys": true,
+	"vintageous_use_sys_clipboard": true
 }
