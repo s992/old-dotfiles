@@ -23,11 +23,11 @@ Plug 'easymotion/vim-easymotion'
 " generic coding
 Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
-Plug 'w0rp/ale'
 Plug 'tpope/vim-surround'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'neomake/neomake'
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
@@ -42,8 +42,11 @@ Plug 'skielbasa/vim-material-monokai'
 Plug 'itchyny/lightline.vim'
 Plug 'mgee/lightline-bufferline'
 
-" typescript
+" typescript /js
 Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'peitalin/vim-jsx-typescript'
 
 " ios
 Plug 'eraserhd/vim-ios'

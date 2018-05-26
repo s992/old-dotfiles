@@ -2,9 +2,6 @@
 " Mappings config
 """""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
-map <F24> :ALEFindReferences<CR> 
-map <F12> :ALEGoToDefinition<CR>
-map <C-i> :ALEHover<CR>
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -18,16 +15,12 @@ vnoremap <C-x> d
 nnoremap d "_d
 vnoremap d "_d
 
-" typescript mappings
-augroup typescript
-  autocmd!
-  autocmd FileType typescript map <F12> :call LanguageClient#textDocument_definition()<CR>
-  autocmd FileType typescript map <F24> :call LanguageClient#textDocument_references()<CR>
-  autocmd FileType typescript map <C-i> :call LanguageClient#textDocument_hover()<CR>
-  autocmd FileType typescript map <leader>i :call LanguageClient#textDocument_codeAction()<CR>
-  autocmd FileType typescript map <F2> :call LanguageClient#textDocument_rename()<CR>
-  autocmd FileType typescript map <leader>r :call LanguageClient#textDocument_documentSymbol()<CR>
-augroup END
+map <F12> :call LanguageClient#textDocument_definition()<CR>
+map <F24> :call LanguageClient#textDocument_references()<CR>
+map <C-i> :call LanguageClient#textDocument_hover()<CR>
+map <leader>i :call LanguageClient#textDocument_codeAction()<CR>
+map <F2> :call LanguageClient#textDocument_rename()<CR>
+map <leader>r :call LanguageClient#textDocument_documentSymbol()<CR>
 
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")

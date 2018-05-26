@@ -52,7 +52,7 @@
     "vim.statusBarColorControl": true,
     "vim.easymotionMarkerFontFamily": "Fira Code",
     "vim.easymotionMarkerYOffset": 5,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
     "vim.statusBarColors": {
         "normal": ["#30302c", "#8197bf"],
         "insert": ["#30302c", "#99ad6a"],

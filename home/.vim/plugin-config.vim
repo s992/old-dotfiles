@@ -14,12 +14,8 @@ let g:lightline.tabline = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type = {'buffers': 'tabsel'}
 
-" Ale Configuration
-let g:ale_completion_enabled = 0
-let g:airline#extensions#ale#enabled = 1
-let g:ale_fixers = {
-\ 'typescript': ['tslint'],
-\}
+" neomake
+call neomake#configure#automake('nrwi', 500)
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -27,7 +23,14 @@ let g:python_host_prog = '/Users/seanwalsh/virtualenvs/nvim/bin/python'
 let g:python3_host_prog = '/Users/seanwalsh/virtualenvs/nvim3/bin/python'
 
 " language server
-let g:LanguageClient_serverCommands = {'typescript': ['javascript-typescript-stdio']}
+let g:LanguageClient_serverCommands = {
+      \'typescript': ['javascript-typescript-stdio'],
+      \'typescript.jsx': ['javascript-typescript-stdio'],
+      \'javascript': ['javascript-typescript-stdio'],
+      \'javascript.jsx': ['javascript-typescript-stdio'],
+      \'reason': ['ocaml-language-server', '--stdio'],
+      \'ocaml': ['ocaml-language-server', '--stdio'],
+      \}
 
 " Markdown Syntax Support
 augroup markdown
