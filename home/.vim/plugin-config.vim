@@ -32,6 +32,10 @@ let g:LanguageClient_serverCommands = {
       \'ocaml': ['ocaml-language-server', '--stdio'],
       \}
 
+" prettier
+let g:prettier#exec_cmd_async = 1
+let g:prettier#autoformat = 0
+
 " Markdown Syntax Support
 augroup markdown
     au!
