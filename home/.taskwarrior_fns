@@ -14,7 +14,6 @@ alias td='task done'
 alias tb="task burndown.daily"
 alias tbw='task burndown.weekly'
 alias tbm='task burndown.monthly'
-alias tp='task projects'
 alias ts='task summary'
 alias tcat="task projects rc.list.all.projects=yes 2>/dev/null | grep -E '^\w' | grep -vE '^\d+ projects'"
 alias tl='task ls'
@@ -27,6 +26,14 @@ function tickle() {
 
 function ts() {
   task $1 modify wait:$2
+}
+
+function tp() {
+  if [ -z "$1" ]; then
+    task projects
+  else
+    task project:"$1"
+  fi
 }
 
 function webpage-title() {
