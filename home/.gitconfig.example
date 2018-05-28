@@ -24,7 +24,7 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
 [core]
-  editor = /usr/bin/vi
+  editor = /usr/local/bin/nvim
   excludesfile = ~/.gitignore
   trustctime = false
 [status]

@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export EDITOR="vi"
 export APK_DIR=build/outputs/apk/release
 export TASKDATA=$HOME/Dropbox/apps/taskwarrior
 export BACKUPS=$HOME/Dropbox/backups
@@ -10,3 +9,11 @@ export LC_ALL='en_US.UTF-8'
 export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --quiet --force --style zenburn"
 export LESS=' -R'
 export FZF_DEFAULT_OPTS='--reverse --ansi'
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
