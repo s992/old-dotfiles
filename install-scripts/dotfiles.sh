@@ -4,8 +4,8 @@ echo "Creating dotfile symlinks.."
 touch $PWD/home/.secrets
 touch $PWD/home/.functions_private
 touch $PWD/home/.aliases_private
-touch $PWD/home/.gitconfig
 touch $PWD/home/.aws/credentials
+cp $PWD/home/.gitconfig.example $PWD/home/.gitconfig
 
 ln -fs $PWD/home/.aliases ~/.aliases
 ln -fs $PWD/home/.aliases_private ~/.aliases_private
