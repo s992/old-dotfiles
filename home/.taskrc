@@ -11,7 +11,6 @@
 # Use the command 'task show' to see all defaults and overrides
 
 # Color theme 
-# include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 include ~/dotfiles/apps/taskwarrior/color.theme
 
 # reports
@@ -51,6 +50,10 @@ alias.m=modify
 
 # coefficients / priorities
 urgency.user.tag.in.coefficient=15.0
+urgency.uda.priority.L.coefficient=0.8
+urgency.age.coefficient=0
+urgency.tags.coefficient=0
+urgency.annotations.coefficient=0
 uda.priority.values=H,,L
 
 # misc
