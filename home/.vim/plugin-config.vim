@@ -15,7 +15,7 @@ let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type = {'buffers': 'tabsel'}
 
 " neomake
-call neomake#configure#automake('nrwi', 500)
+" call neomake#configure#automake('nrwi', 500)
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -30,11 +30,15 @@ let g:LanguageClient_serverCommands = {
       \'javascript.jsx': ['javascript-typescript-stdio'],
       \'reason': ['ocaml-language-server', '--stdio'],
       \'ocaml': ['ocaml-language-server', '--stdio'],
+      \'rust': ['rustup', 'run', 'nightly', 'rls']
       \}
 
 " prettier
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 0
+
+" rust
+let g:rustfmt_autosave = 1
 
 " Markdown Syntax Support
 augroup markdown

@@ -57,5 +57,8 @@ Plug 'keith/swift.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'zchee/deoplete-jedi'
 
+" rust
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 

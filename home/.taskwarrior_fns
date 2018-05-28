@@ -5,10 +5,19 @@ alias tc='task context'
 alias in='task add +in'
 alias tick=tickle
 alias think='tickle +1d'
-alias review='task add +next +@review'
+alias review='task add +review'
 alias rnr=read-and-review
-alias work='task add +next +@work'
-alias future='task add +next +@work +@future'
+alias work='task add +work'
+alias future='task add +work +future'
+alias tm='task modify'
+alias td='task done'
+alias tb="task burndown.daily"
+alias tbw='task burndown.weekly'
+alias tbm='task burndown.monthly'
+alias tp='task projects'
+alias ts='task summary'
+alias tcat="task projects rc.list.all.projects=yes 2>/dev/null | grep -E '^\w' | grep -vE '^\d+ projects'"
+alias tl='task ls'
 
 function tickle() {
   local deadline=$1
@@ -20,10 +29,6 @@ function ts() {
   task $1 modify wait:$2
 }
 
-function tp() {
-  task project:$1
-}
-
 function webpage-title() {
   wget -qO- "$*" | hxnormalize -x -l 99999 | hxselect -s '\n' -c 'title' 2>/dev/null
 }
@@ -33,6 +38,6 @@ function read-and-review() {
   local title=$(webpage-title $link)
   echo $title
   local descr="\"Read and review: $title\""
-  local id=$(task add +next +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
+  local id=$(task add +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
   task "$id" annotate "$link"
 }

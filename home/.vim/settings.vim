@@ -74,3 +74,8 @@ if has('nvim')
   let g:terminal_color_15 = '#f7f7f7'
 endif
 
+augroup quickfix
+  autocmd!
+  autocmd FileType qf setlocal wrap
+augroup END
+

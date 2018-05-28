@@ -13,6 +13,7 @@ alias more='less'
 alias hcat="highlight $1 --out-format xterm256 --line-numbers --quiet --force --style zenburn"
 alias ag='ag -p ~/.ignore'
 alias rn='react-native'
+alias emulator='$ANDROID_HOME/tools/emulator -avd'
 
 alias -g J='| jq'
 alias -g L='| less'
