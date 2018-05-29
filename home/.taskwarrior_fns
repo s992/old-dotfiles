@@ -17,6 +17,7 @@ alias tbm='task burndown.monthly'
 alias ts='task summary'
 alias tcat="task projects rc.list.all.projects=yes 2>/dev/null | grep -E '^\w' | grep -vE '^\d+ projects'"
 alias tl='task ls'
+alias tn='tasknote'
 
 function tickle() {
   local deadline=$1
