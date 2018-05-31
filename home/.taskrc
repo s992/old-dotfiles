@@ -54,6 +54,7 @@ urgency.uda.priority.L.coefficient=0.8
 urgency.age.coefficient=0
 urgency.tags.coefficient=0
 urgency.annotations.coefficient=0
+urgency.project.coefficient=0
 uda.priority.values=H,,L
 
 # misc
