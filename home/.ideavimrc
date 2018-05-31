@@ -3,6 +3,7 @@ set smartcase
 set hlsearch
 set incsearch
 set relativenumber
+set showmode
 set scrolloff=10
 set clipboard=unnamedplus,unnamed
 
