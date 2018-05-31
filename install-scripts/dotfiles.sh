@@ -12,7 +12,6 @@ ln -fs $PWD/home/.aliases_private ~/.aliases_private
 ln -fs $PWD/home/.exports ~/.exports
 ln -fs $PWD/home/.functions ~/.functions
 ln -fs $PWD/home/.functions_private ~/.functions_private
-ln -fs $PWD/home/.gitconfig ~/.gitconfig
 ln -fs $PWD/home/.gitignore ~/.gitignore
 ln -fs $PWD/home/.ideavimrc ~/.ideavimrc
 ln -fs $PWD/home/.ignore ~/.ignore
@@ -29,4 +28,9 @@ ln -fs $PWD/home/.vimrc ~/.vimrc
 ln -fs $PWD/home/.zshenv ~/.zshenv
 ln -fs $PWD/home/.zshrc ~/.zshrc
 ln -fs $PWD/home/.aws ~/.aws
+
+if [ ! -f ~/.gitconfig ]; then
+  ln -fs $PWD/home/.gitconfig ~/.gitconfig
+fi
+
 echo " -> done"
