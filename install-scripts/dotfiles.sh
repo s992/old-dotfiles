@@ -14,6 +14,7 @@ ln -fs $PWD/home/.functions ~/.functions
 ln -fs $PWD/home/.functions_private ~/.functions_private
 ln -fs $PWD/home/.gitconfig ~/.gitconfig
 ln -fs $PWD/home/.gitignore ~/.gitignore
+ln -fs $PWD/home/.ideavimrc ~/.ideavimrc
 ln -fs $PWD/home/.ignore ~/.ignore
 ln -fs $PWD/home/.ignore ~/.agignore
 ln -fs $PWD/home/.nvmrc ~/.nvmrc

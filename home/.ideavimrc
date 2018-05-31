@@ -1,0 +1,33 @@
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set relativenumber
+set scrolloff=10
+set clipboard=unnamedplus,unnamed
+
+let mapleader = '\'
+let maplocalleader = '\'
+
+map <leader>sv :source ~/.ideavimrc<CR>
+
+nnoremap B ^
+nnoremap E $
+nnoremap U <C-r>
+nnoremap gb :action VimMotionPreviousTab<CR>
+nnoremap <leader><space> :nohls<CR>
+nnoremap mm :action ToggleBookmark<CR>
+nnoremap mn :action GotoNextBookmark<CR>
+
+nmap <C-p> :action GotoFile<CR>
+nmap <F12> :action GotoDeclaration<CR>
+nmap <leader>r :action GotoSymbol<CR>
+nmap <F2> :action Refactorings.QuickListPopupAction<CR>
+nmap <C-i> :action QuickImplementations<CR>
+nmap <tab> :action QuickJavaDoc<CR>
+nmap <leader>i :action ShowIntentionActions<CR>
+nmap <S-F12> :action FindUsages<CR>
+nmap <leader>d :action ShowErrorDescription<CR>
+nmap <leader>f :action KJumpAction<CR>
+nmap <leader>w :action KJumpAction.Word0<CR>
+nmap <leader>p :action ReformatWithPrettierAction<CR>
