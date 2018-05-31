@@ -25,6 +25,7 @@ set noshowmode
 set showtabline=2
 set noerrorbells
 set novisualbell
+set guioptions=
 set t_vb=
 set tm=500
 set nobackup

@@ -17,6 +17,7 @@ vnoremap d "_d
 
 map <F12> :call LanguageClient#textDocument_definition()<CR>
 map <F24> :call LanguageClient#textDocument_references()<CR>
+map <S-F12> :call LanguageClient#textDocument_references()<CR>
 map <C-i> :call LanguageClient#textDocument_hover()<CR>
 map <leader>i :call LanguageClient#textDocument_codeAction()<CR>
 map <F2> :call LanguageClient#textDocument_rename()<CR>
@@ -46,7 +47,7 @@ imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
- 
+
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
