@@ -133,3 +133,5 @@ ranger-cd() {
 zle -N ranger-cd
 bindkey '^o' ranger-cd
 
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
