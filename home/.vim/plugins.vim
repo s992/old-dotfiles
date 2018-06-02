@@ -60,5 +60,8 @@ Plug 'zchee/deoplete-jedi'
 " rust
 Plug 'rust-lang/rust.vim'
 
+" go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 

@@ -9,6 +9,7 @@
 	"font_face": "Fira Code",
 	"font_size": 13,
 	"highlight_line": true,
+	"highlight_trailing_whitespace": true,
 	"ignored_packages":
 	[
 		"Markdown",
@@ -22,6 +23,5 @@
 	"translate_tabs_to_spaces": true,
 	"vintageous_modeline": true,
 	"vintageous_use_ctrl_keys": true,
-	"vintageous_use_sys_clipboard": true,
-	"highlight_trailing_whitespace": true	
+	"vintageous_use_sys_clipboard": true
 }

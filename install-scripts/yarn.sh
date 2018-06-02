@@ -2,5 +2,5 @@
 #!/bin/sh
 
 echo "Installing yarn packages.."
-yarn global add javascript-typescript-langserver react-devtools react-native tslint typescript
+yarn global add javascript-typescript-langserver react-devtools react-native tslint typescript gnomon
 echo " -> done"
