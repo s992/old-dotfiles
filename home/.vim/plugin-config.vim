@@ -30,8 +30,15 @@ let g:LanguageClient_serverCommands = {
       \'javascript.jsx': ['javascript-typescript-stdio'],
       \'reason': ['ocaml-language-server', '--stdio'],
       \'ocaml': ['ocaml-language-server', '--stdio'],
-      \'rust': ['rustup', 'run', 'nightly', 'rls']
+      \'rust': ['rustup', 'run', 'nightly', 'rls'],
+      \'cpp': ['cquery', '--log-file=/tmp/cq.log'],
+      \'c': ['cquery', '--log-file=/tmp/cq.log'],
+      \'objc': ['cquery', '--log-file=/tmp/cq.log'],
+      \'objcpp': ['cquery', '--log-file=/tmp/cq.log']
       \}
+
+let g:LanguageClient_loadSettings = 1
+let g:LanguageClient_settingsPath = '/Users/seanwalsh/.config/nvim/settings.json'
 
 " prettier
 let g:prettier#exec_cmd_async = 1
