@@ -13,6 +13,7 @@
 	"ignored_packages":
 	[
 		"Markdown",
+		"NeoVintageous",
 		"Six",
 		"Vintage",
 		"Vintageous"
