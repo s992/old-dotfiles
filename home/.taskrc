@@ -13,6 +13,9 @@
 # Color theme 
 include ~/dotfiles/apps/taskwarrior/color.theme
 
+# top secret
+include ~/dotfiles/home/.taskrc-private
+
 # reports
 ## in
 report.in.columns = id,description
