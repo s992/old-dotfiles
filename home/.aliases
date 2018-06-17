@@ -18,4 +18,6 @@ alias emulator='$ANDROID_HOME/tools/emulator -avd'
 alias -g J='| jq'
 alias -g L='| less'
 alias -g G='| gnomon -t absolute'
+alias -g T='| tee'
+alias -g X='| xargs'
 
