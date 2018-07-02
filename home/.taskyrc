@@ -1,0 +1,9 @@
+[Keybinds]
+I = +in
+R = +rnr
+F = +future
+W = -in -rnr -future (+work or +review)
+P = -in -rnr -future +personal
+
+[Filters]
+default = -in -rnr -future

@@ -19,6 +19,7 @@ ln -fs $PWD/home/.ignore ~/.agignore
 ln -fs $PWD/home/.nvmrc ~/.nvmrc
 ln -fs $PWD/home/.secrets ~/.secrets
 ln -fs $PWD/home/.taskrc ~/.taskrc
+ln -fs $PWD/home/.taskyrc ~/.taskyrc
 ln -fs $PWD/home/.taskwarrior_fns ~/.taskwarrior_fns
 ln -fs $PWD/home/.tmux/.tmux.conf ~/.tmux.conf
 ln -fs $PWD/home/.tmux/.tmux.conf.local ~/.tmux.conf.local
