@@ -66,5 +66,6 @@
       "statusBar.noFolderBackground": "#30302c",
       "statusBar.debuggingBackground": "#30302c",
       "statusBar.foreground": "#8197bf"
-    }
+    },
+    "reason.codelens.enabled": true
   }

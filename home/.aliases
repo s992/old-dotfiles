@@ -15,6 +15,7 @@ alias ag='ag -p ~/.ignore'
 alias rn='react-native'
 alias emulator='$ANDROID_HOME/tools/emulator -avd'
 alias d.='desk .'
+alias grip='grip -b'
 
 alias -g J='| jq'
 alias -g L='| less'
