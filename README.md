@@ -72,52 +72,84 @@ These are just functions specific to Taskwarrior that I wanted to separate out.
 Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out how to parse out casks or mas installs.
 
 - [`android-platform-tools`](https://developer.android.com/sdk): Tools for the Android SDK
+- [`automake`](https://www.gnu.org/software/automake/): Tool for generating GNU Standards-compliant Makefiles
 - [`awscli`](https://aws.amazon.com/cli/): Official Amazon AWS command-line interface
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
+- [`cheat`](https://github.com/chrisallenlane/cheat): Create and view interactive cheat sheets for *nix commands
 - [`cmake`](https://www.cmake.org/): Cross-platform make
 - [`cocoapods`](https://cocoapods.org/): Dependency manager for Cocoa projects
-- [`curl`](https://curl.haxx.se/): Get a file from an HTTP, HTTPS or FTP server
+- [`coreutils`](https://www.gnu.org/software/coreutils): GNU File, Shell, and Text utilities
+- [`desk`](https://github.com/jamesob/desk): Lightweight workspace manager for the shell
+- [`dex2jar`](https://github.com/pxb1988/dex2jar): Tools to work with Android .dex and Java .class files
+- [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy): Good-lookin' diffs with diff-highlight and more
 - [`docker-clean`](https://github.com/ZZROTDesign/docker-clean): Clean Docker containers, images, networks, and volumes
+- [`elixir`](https://elixir-lang.org/): Functional metaprogramming aware language built on Erlang VM
 - [`exa`](https://the.exa.website): Modern replacement for 'ls'
 - [`exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/index.html): Perl lib for reading and writing EXIF metadata
 - [`fd`](https://github.com/sharkdp/fd): Simple, fast and user-friendly alternative to find
+- [`ffmpeg`](https://ffmpeg.org/): Play, record, convert, and stream audio and video
 - [`fpp`](https://facebook.github.io/PathPicker/): CLI program that accepts piped input and presents files for selection
 - [`fzf`](https://github.com/junegunn/fzf): Command-line fuzzy finder written in Go
+- [`gawk`](https://www.gnu.org/software/gawk/): GNU awk utility
 - [`git`](https://git-scm.com): Distributed revision control system
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
 - [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
 - [`go`](https://golang.org): Open source programming language to build simple/reliable/efficient software
 - [`gradle`](https://www.gradle.org/): Build system based on the Groovy language
+- [`graphicsmagick`](http://www.graphicsmagick.org/): Image processing tools collection
+- [`graphviz`](https://www.graphviz.org/): Graph visualization software from AT&T and Bell Labs
 - [`grip`](https://github.com/joeyespo/grip): GitHub Markdown previewer
+- [`gtk+3`](https://gtk.org/): Toolkit for creating graphical user interfaces
+- [`highlight`](http://www.andre-simon.de/doku/highlight/en/highlight.html): Convert source code to formatted text with syntax highlighting
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
 - [`httpie`](https://httpie.org/): User-friendly cURL replacement (command-line HTTP client)
 - [`ideviceinstaller`](https://www.libimobiledevice.org/): Cross-platform library for communicating with iOS devices
 - [`imagemagick`](https://www.imagemagick.org/): Tools and libraries to manipulate images in many formats
+- [`infer`](http://fbinfer.com/): Static analyzer for Java, C, C++, and Objective-C
 - [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
 - [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
 - [`jq`](https://stedolan.github.io/jq/): Lightweight and flexible command-line JSON processor
 - [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
+- [`lame`](https://lame.sourceforge.io/): High quality MPEG Audio Layer III (MP3) encoder
 - [`libimobiledevice`](https://www.libimobiledevice.org/): Library to communicate with iOS devices natively
-- [`make`](https://www.gnu.org/software/make/): Utility for directing compilation
+- [`libxml2`](http://xmlsoft.org/): GNOME XML library
+- [`libyaml`](https://github.com/yaml/libyaml): YAML Parser
+- [`lynx`](https://invisible-island.net/lynx/): Text-based web browser
+- [`macvim`](https://github.com/macvim-dev/macvim): GUI for vim, made for macOS
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
 - [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
+- [`node`](https://nodejs.org/): Platform built on V8 to build network applications
+- [`nvm`](https://github.com/creationix/nvm): Manage multiple Node.js versions
+- [`pass`](https://www.passwordstore.org/): Password manager
 - [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
+- [`protobuf`](https://github.com/google/protobuf/): Protocol buffers (Google's data interchange format)
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
+- [`q`](https://github.com/harelba/q): Treat text as a database
+- [`qt`](https://www.qt.io/): Cross-platform application and UI framework
+- [`r`](https://www.r-project.org/): Software environment for statistical computing
 - [`ranger`](https://ranger.github.io): File browser
-- [`rbenv`](https://github.com/rbenv/rbenv#readme): Ruby version manager
+- [`reattach-to-user-namespace`](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard): Reattach process (e.g., tmux) to background
+- [`rename`](http://plasmasturm.org/code/rename): Perl-powered file rename script with many helpful built-ins
 - [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
 - [`rust`](https://www.rust-lang.org/): Safe, concurrent, practical language
 - [`sourcekitten`](https://github.com/jpsim/SourceKitten): Framework and command-line tool for interacting with SourceKit
 - [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
+- [`swiftlint`](https://github.com/realm/SwiftLint): Tool to enforce Swift style and conventions
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
 - [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
 - [`the_silver_searcher`](https://github.com/ggreer/the_silver_searcher): Code-search similar to ack
 - [`tig`](https://jonas.github.io/tig/): Text interface for Git repositories
+- [`tmux`](https://tmux.github.io/): Terminal multiplexer
 - [`tree`](http://mama.indstate.edu/users/ice/tree/): Display directories as trees (with optional color/HTML output)
-- [`universal-ctags`](https://github.com/universal-ctags/ctags): Maintained ctags implementation
+- [`vim`](https://www.vim.org/): Vi 'workalike' with many additional features
 - [`visidata`](http://visidata.org/): Terminal utility for exploring and arranging tabular data
+- [`watchman`](https://github.com/facebook/watchman): Watch files and take action when they change
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
+- [`x264`](https://www.videolan.org/developers/x264.html): H.264/AVC encoder
+- [`xvid`](https://www.xvid.com/): High-performance, high-quality MPEG-4 video library
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
+- [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
+
