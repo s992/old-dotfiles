@@ -85,3 +85,12 @@ function gifenc() {
   ffmpeg -v warning -i $in -vf "$filters,palettegen" -y $palette
   ffmpeg -v warning -i $in -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y $out
 }
+
+function adb-wifi() {
+  local port="5555"
+  local ip=$(adb shell netcfg | awk 'NR==1{print $3}' | sed -E 's/\/[0-9]+$//g')
+
+  adb tcpip $port
+  adb connect $ip:$port
+}
+
