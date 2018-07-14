@@ -34,7 +34,16 @@ function cs() {
 }
 
 function csh() {
-  curl https://cheat.sh/$1
+  local topic=$1
+  shift
+
+  local query=$@
+
+  if [ -n "$query" ]; then
+    query=$(echo $query | tr " " +)
+  fi
+
+  curl https://cht.sh/$topic/$query
 }
 
 function fh() {
