@@ -103,3 +103,18 @@ function adb-wifi() {
   adb connect $ip:$port
 }
 
+function dni() {
+  local book=$1
+  shift
+  local note=$@
+
+  dnote add $book -c "$note"
+}
+
+function dnc() {
+  local book=$1
+  local index=$2
+
+  dnote cat $book $index | awk '/content\-+$/{flag=1;next} /\-{55}$/{flag=0}flag' | mdcat
+}
+

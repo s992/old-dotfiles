@@ -17,6 +17,8 @@ alias emulator='$ANDROID_HOME/tools/emulator -avd'
 alias d.='desk .'
 alias grip='grip -b'
 alias adb-reverse='adb reverse tcp:8081 tcp:8081' # react native
+alias dn='dnote'
+alias dna='dnote add'
 
 alias -g J='| jq'
 alias -g L='| less'
