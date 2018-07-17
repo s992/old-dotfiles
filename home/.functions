@@ -111,6 +111,21 @@ function dni() {
   dnote add $book -c "$note"
 }
 
+function ni() {
+  local book=$1
+  shift
+  local note=$@
+
+  note add $book -c "$note"
+}
+
+function ncat() {
+  local book=$1
+  local note=$2
+
+  note cat $book $note | mdcat
+}
+
 function dnc() {
   local book=$1
   local index=$2

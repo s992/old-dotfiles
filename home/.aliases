@@ -19,6 +19,8 @@ alias grip='grip -b'
 alias adb-reverse='adb reverse tcp:8081 tcp:8081' # react native
 alias dn='dnote'
 alias dna='dnote add'
+alias n='note'
+alias na='note add'
 
 alias -g J='| jq'
 alias -g L='| less'
