@@ -25,9 +25,6 @@ Plug 'Townk/vim-autoclose'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'metakirby5/codi.vim'
-Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
-Plug 'neomake/neomake'
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
@@ -52,16 +49,6 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " ios
 Plug 'eraserhd/vim-ios'
 Plug 'keith/swift.vim'
-
-" python
-Plug 'davidhalter/jedi-vim'
-Plug 'zchee/deoplete-jedi'
-
-" rust
-Plug 'rust-lang/rust.vim'
-
-" go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 

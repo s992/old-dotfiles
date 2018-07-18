@@ -15,14 +15,6 @@ vnoremap <C-x> d
 nnoremap d "_d
 vnoremap d "_d
 
-map <F12> :call LanguageClient#textDocument_definition()<CR>
-map <F24> :call LanguageClient#textDocument_references()<CR>
-map <S-F12> :call LanguageClient#textDocument_references()<CR>
-map <C-i> :call LanguageClient#textDocument_hover()<CR>
-map <leader>i :call LanguageClient#textDocument_codeAction()<CR>
-map <F2> :call LanguageClient#textDocument_rename()<CR>
-map <leader>r :call LanguageClient#textDocument_documentSymbol()<CR>
-
 " Omnicomplete Better Nav
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")

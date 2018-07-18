@@ -19,33 +19,10 @@ let g:lightline.component_type = {'buffers': 'tabsel'}
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
-let g:python_host_prog = '/Users/seanwalsh/virtualenvs/nvim/bin/python'
-let g:python3_host_prog = '/Users/seanwalsh/virtualenvs/nvim3/bin/python'
-
-" language server
-let g:LanguageClient_serverCommands = {
-      \'typescript': ['javascript-typescript-stdio'],
-      \'typescript.jsx': ['javascript-typescript-stdio'],
-      \'javascript': ['javascript-typescript-stdio'],
-      \'javascript.jsx': ['javascript-typescript-stdio'],
-      \'reason': ['ocaml-language-server', '--stdio'],
-      \'ocaml': ['ocaml-language-server', '--stdio'],
-      \'rust': ['rustup', 'run', 'nightly', 'rls'],
-      \'cpp': ['cquery', '--log-file=/tmp/cq.log'],
-      \'c': ['cquery', '--log-file=/tmp/cq.log'],
-      \'objc': ['cquery', '--log-file=/tmp/cq.log'],
-      \'objcpp': ['cquery', '--log-file=/tmp/cq.log']
-      \}
-
-let g:LanguageClient_loadSettings = 1
-let g:LanguageClient_settingsPath = '/Users/seanwalsh/.config/nvim/settings.json'
 
 " prettier
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 0
-
-" rust
-let g:rustfmt_autosave = 1
 
 " Markdown Syntax Support
 augroup markdown
@@ -106,11 +83,6 @@ let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_user_command = 'ag %s -l -i --nogroup --nocolor --hidden -g ""'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_switch_buffer = 0
-
-" jedi
-let g:jedi#goto_command = "<F12>"
-let g:jedi#usages_command = "<F24>"
-let g:jedi#documentation_command = "<C-i>"
 
 " rainbow parens
 au VimEnter * RainbowParenthesesToggle
