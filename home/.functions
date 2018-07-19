@@ -78,6 +78,19 @@ function fshow() {
 FZF-EOF"
 }
 
+function fstash() {
+  git stash list \
+    --pretty=format:"%C(red)%h%C(reset) - %C(dim yellow)%C(bold magenta)%gd%C(dim yellow)%C(reset) - %<(70,trunc)%s %C(green)(%cr) %C(reset)" \
+    | fzf \
+      -m \
+      --ansi \
+      --preview="git -c color.ui=always stash show {+1}" \
+      --bind "enter:execute(git show -p {+1})" \
+      --bind "ctrl-p:execute(git stash pop {+3})+abort" \
+      --bind "ctrl-b:execute(git stash branch stash-{+1} {+1})+abort" \
+      --bind "ctrl-x:execute-silent(git stash drop {+3})+abort"
+}
+
 function gifenc() {
   local in=$1
   local out=$2
