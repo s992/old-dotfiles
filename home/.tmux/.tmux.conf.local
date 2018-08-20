@@ -250,3 +250,5 @@ set -g @tpm_plugins ' \
 
 run '~/.tmux/plugins/tpm/tpm'
 
+bind X confirm-before kill-session
+
