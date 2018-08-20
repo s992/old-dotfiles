@@ -74,6 +74,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`android-platform-tools`](https://developer.android.com/sdk): Tools for the Android SDK
 - [`automake`](https://www.gnu.org/software/automake/): Tool for generating GNU Standards-compliant Makefiles
 - [`awscli`](https://aws.amazon.com/cli/): Official Amazon AWS command-line interface
+- [`bat`](https://github.com/sharkdp/bat): Clone of cat(1) with syntax highlighting and Git integration
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
 - [`cheat`](https://github.com/chrisallenlane/cheat): Create and view interactive cheat sheets for *nix commands
 - [`cmake`](https://www.cmake.org/): Cross-platform make
@@ -101,12 +102,12 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`graphviz`](https://www.graphviz.org/): Graph visualization software from AT&T and Bell Labs
 - [`grip`](https://github.com/joeyespo/grip): GitHub Markdown previewer
 - [`gtk+3`](https://gtk.org/): Toolkit for creating graphical user interfaces
-- [`highlight`](http://www.andre-simon.de/doku/highlight/en/highlight.html): Convert source code to formatted text with syntax highlighting
+- [`highlight`](http://www.andre-simon.de/doku/highlight/en/highlight.php): Convert source code to formatted text with syntax highlighting
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
 - [`httpie`](https://httpie.org/): User-friendly cURL replacement (command-line HTTP client)
 - [`ideviceinstaller`](https://www.libimobiledevice.org/): Cross-platform library for communicating with iOS devices
 - [`imagemagick`](https://www.imagemagick.org/): Tools and libraries to manipulate images in many formats
-- [`infer`](http://fbinfer.com/): Static analyzer for Java, C, C++, and Objective-C
+- [`infer`](https://fbinfer.com/): Static analyzer for Java, C, C++, and Objective-C
 - [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
 - [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
 - [`jq`](https://stedolan.github.io/jq/): Lightweight and flexible command-line JSON processor
@@ -143,13 +144,12 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`tmux`](https://tmux.github.io/): Terminal multiplexer
 - [`tree`](http://mama.indstate.edu/users/ice/tree/): Display directories as trees (with optional color/HTML output)
 - [`vim`](https://www.vim.org/): Vi 'workalike' with many additional features
-- [`visidata`](http://visidata.org/): Terminal utility for exploring and arranging tabular data
+- [`visidata`](https://visidata.org/): Terminal utility for exploring and arranging tabular data
 - [`watchman`](https://github.com/facebook/watchman): Watch files and take action when they change
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`x264`](https://www.videolan.org/developers/x264.html): H.264/AVC encoder
-- [`xvid`](https://www.xvid.com/): High-performance, high-quality MPEG-4 video library
+- [`xvid`](https://labs.xvid.com/): High-performance, high-quality MPEG-4 video library
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
-
