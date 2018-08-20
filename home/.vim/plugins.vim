@@ -50,5 +50,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'eraserhd/vim-ios'
 Plug 'keith/swift.vim'
 
+" wiki
+Plug 'vimwiki/vimwiki'
+
 call plug#end()
 
