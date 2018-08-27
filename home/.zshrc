@@ -150,3 +150,5 @@ _fzf_compgen_dir() {
 export FZF_COMPLETION_TRIGGER=''
 bindkey '^F' fzf-completion
 bindkey '^I' $fzf_default_completion
+
+eval $(thefuck --alias)

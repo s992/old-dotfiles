@@ -21,6 +21,7 @@ alias dn='dnote'
 alias dna='dnote add'
 alias n='note'
 alias na='note add'
+alias cat='bat'
 
 alias -g J='| jq'
 alias -g L='| less'
