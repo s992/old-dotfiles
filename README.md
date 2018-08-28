@@ -75,6 +75,8 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`automake`](https://www.gnu.org/software/automake/): Tool for generating GNU Standards-compliant Makefiles
 - [`awscli`](https://aws.amazon.com/cli/): Official Amazon AWS command-line interface
 - [`bat`](https://github.com/sharkdp/bat): Clone of cat(1) with syntax highlighting and Git integration
+- [`bazel`](https://bazel.build/): Bazel is a fast, scalable, multi-language and extensible build system
+- [`buku`](https://github.com/jarun/Buku): Powerful command-line bookmark manager
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
 - [`cheat`](https://github.com/chrisallenlane/cheat): Create and view interactive cheat sheets for *nix commands
 - [`cmake`](https://www.cmake.org/): Cross-platform make
@@ -111,6 +113,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
 - [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
 - [`jq`](https://stedolan.github.io/jq/): Lightweight and flexible command-line JSON processor
+- [`ktlint`](https://github.com/shyiko/ktlint): Kotlin linter
 - [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
 - [`lame`](https://lame.sourceforge.io/): High quality MPEG Audio Layer III (MP3) encoder
 - [`libimobiledevice`](https://www.libimobiledevice.org/): Library to communicate with iOS devices natively
@@ -124,7 +127,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`nvm`](https://github.com/creationix/nvm): Manage multiple Node.js versions
 - [`pass`](https://www.passwordstore.org/): Password manager
 - [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
-- [`protobuf`](https://github.com/google/protobuf/): Protocol buffers (Google's data interchange format)
+- [`protobuf`](https://github.com/protocolbuffers/protobuf/): Protocol buffers (Google's data interchange format)
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
 - [`q`](https://github.com/harelba/q): Treat text as a database
 - [`qt`](https://www.qt.io/): Cross-platform application and UI framework
@@ -140,6 +143,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
 - [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
 - [`the_silver_searcher`](https://github.com/ggreer/the_silver_searcher): Code-search similar to ack
+- [`thefuck`](https://github.com/nvbn/thefuck): Programatically correct mistyped console commands
 - [`tig`](https://jonas.github.io/tig/): Text interface for Git repositories
 - [`tmux`](https://tmux.github.io/): Terminal multiplexer
 - [`tree`](http://mama.indstate.edu/users/ice/tree/): Display directories as trees (with optional color/HTML output)
