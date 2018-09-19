@@ -2,7 +2,9 @@
 	"always_show_minimap_viewport": true,
 	"binary_file_patterns":
 	[
-		"node_modules/"
+		"node_modules/",
+		"build/",
+		"DerivedData"
 	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
