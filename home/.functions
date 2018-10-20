@@ -1,7 +1,7 @@
 #!/bin/sh
 
 function android-version() {
-  ~/Library/Android/sdk/build-tools/25.0.1/aapt dump badging $1 | grep version
+  aapt dump badging $1 | grep version
 }
 
 function ctx() {

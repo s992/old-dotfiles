@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo pipefail
 
 ./install-scripts/mac-settings.sh
 ./install-scripts/brew-install.sh
@@ -14,6 +15,7 @@
 ./install-scripts/sublime.sh
 ./install-scripts/chrome.sh
 ./install-scripts/ranger.sh
+./install-scripts/vimplug.sh
 ./install-scripts/neovim.sh
 ./install-scripts/dotfiles.sh
 
@@ -23,6 +25,7 @@ echo " -> Add necessary secrets to home/.secrets"
 echo " -> Add AWS credentials to home/aws/credentials"
 echo " -> Add home/.functions_private and home/.aliases_private"
 echo " -> Install RVM"
+echo " -> gem install tmuxinator"
 echo " -> Import apps/iterm2/Relaxed.itermcolors"
 echo " -> Update iTerm2 settings directory"
 

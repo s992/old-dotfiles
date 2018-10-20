@@ -7,9 +7,8 @@
 		"DerivedData"
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"font_face": "Fira Code",
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_trailing_whitespace": true,
 	"ignored_packages":

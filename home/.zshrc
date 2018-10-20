@@ -82,7 +82,8 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+. "/usr/local/opt/nvm/nvm.sh"
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
@@ -149,6 +150,5 @@ _fzf_compgen_dir() {
 
 export FZF_COMPLETION_TRIGGER=''
 bindkey '^F' fzf-completion
-bindkey '^I' $fzf_default_completion
 
 eval $(thefuck --alias)

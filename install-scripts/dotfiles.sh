@@ -24,11 +24,11 @@ ln -fs $PWD/home/.taskwarrior_fns ~/.taskwarrior_fns
 ln -fs $PWD/home/.tmux/.tmux.conf ~/.tmux.conf
 ln -fs $PWD/home/.tmux/.tmux.conf.local ~/.tmux.conf.local
 ln -fs $PWD/home/tmuxinator.zsh ~/tmuxinator.zsh
-ln -fs $PWD/home/.vim ~/vimrc
+ln -fsn $PWD/home/.vim ~/vimrc
 ln -fs $PWD/home/.vimrc ~/.vimrc
 ln -fs $PWD/home/.zshenv ~/.zshenv
 ln -fs $PWD/home/.zshrc ~/.zshrc
-ln -fs $PWD/home/.aws ~/.aws
+ln -fsn $PWD/home/.aws ~/.aws
 
 if [ ! -f ~/.gitconfig ]; then
   ln -fs $PWD/home/.gitconfig ~/.gitconfig

@@ -4,5 +4,5 @@ echo "Installing brew stuff.."
 brew update
 brew upgrade
 brew bundle
-brew cask cleanup
+brew cleanup
 echo " -> done"
