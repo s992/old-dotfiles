@@ -10,7 +10,7 @@ brew install nvm
 
 mkdir ~/.nvm
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+. $(brew --prefix nvm)/nvm.sh
 
 nvm install v8.9.0
 nvm alias stable v8.9.0
