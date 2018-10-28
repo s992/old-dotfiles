@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 export NVM_DIR="$HOME/.nvm"
-. $(brew --prefix nvm)/nvm.sh
+source /usr/local/opt/nvm/nvm.sh
 
 
 # The next line updates PATH for the Google Cloud SDK.
