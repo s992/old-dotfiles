@@ -19,6 +19,7 @@
 		"Vintage",
 		"Vintageous"
 	],
+	"node_path": "/Users/seanwalsh/.nvm/versions/node/v8.9.0/bin/node",
 	"scroll_past_end": true,
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
