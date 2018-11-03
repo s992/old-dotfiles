@@ -71,11 +71,11 @@ These are just functions specific to Taskwarrior that I wanted to separate out.
 ## Brewfile
 Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out how to parse out casks or mas installs.
 
-- [`android-platform-tools`](https://developer.android.com/sdk): Tools for the Android SDK
+- [`asciinema`](https://asciinema.org): Record and share terminal sessions
 - [`automake`](https://www.gnu.org/software/automake/): Tool for generating GNU Standards-compliant Makefiles
 - [`awscli`](https://aws.amazon.com/cli/): Official Amazon AWS command-line interface
 - [`bat`](https://github.com/sharkdp/bat): Clone of cat(1) with syntax highlighting and Git integration
-- [`bazel`](https://bazel.build/): Bazel is a fast, scalable, multi-language and extensible build system
+- [`bazel`](https://bazel.build/): Google's own build tool
 - [`buku`](https://github.com/jarun/Buku): Powerful command-line bookmark manager
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
 - [`cheat`](https://github.com/chrisallenlane/cheat): Create and view interactive cheat sheets for *nix commands
@@ -97,9 +97,11 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`git`](https://git-scm.com): Distributed revision control system
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
+- [`gmp`](https://gmplib.org/): GNU multiple precision arithmetic library
+- [`gnu-getopt`](http://frodo.looijaard.name/project/getopt): Command-line option parsing library
 - [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
 - [`go`](https://golang.org): Open source programming language to build simple/reliable/efficient software
-- [`gradle`](https://www.gradle.org/): Build system based on the Groovy language
+- [`gradle`](https://www.gradle.org/): Open-source build automation tool based on the Groovy and Kotlin DSL
 - [`graphicsmagick`](http://www.graphicsmagick.org/): Image processing tools collection
 - [`graphviz`](https://www.graphviz.org/): Graph visualization software from AT&T and Bell Labs
 - [`grip`](https://github.com/joeyespo/grip): GitHub Markdown previewer
@@ -116,17 +118,20 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`ktlint`](https://github.com/shyiko/ktlint): Kotlin linter
 - [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
 - [`lame`](https://lame.sourceforge.io/): High quality MPEG Audio Layer III (MP3) encoder
-- [`libimobiledevice`](https://www.libimobiledevice.org/): Library to communicate with iOS devices natively
+- [`libffi`](https://sourceware.org/libffi/): Portable Foreign Function Interface library
 - [`libxml2`](http://xmlsoft.org/): GNOME XML library
 - [`libyaml`](https://github.com/yaml/libyaml): YAML Parser
 - [`lynx`](https://invisible-island.net/lynx/): Text-based web browser
 - [`macvim`](https://github.com/macvim-dev/macvim): GUI for vim, made for macOS
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
+- [`mdcat`](https://github.com/lunaryorn/mdcat): Show markdown documents on text terminals
 - [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
-- [`node`](https://nodejs.org/): Platform built on V8 to build network applications
 - [`nvm`](https://github.com/creationix/nvm): Manage multiple Node.js versions
+- [`openssl`](https://openssl.org/): SSL/TLS cryptography library
 - [`pass`](https://www.passwordstore.org/): Password manager
+- [`peco`](https://github.com/peco/peco): Simplistic interactive filtering tool
 - [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
+- [`pkg-config`](https://freedesktop.org/wiki/Software/pkg-config/): Manage compile and link flags for libraries
 - [`protobuf`](https://github.com/protocolbuffers/protobuf/): Protocol buffers (Google's data interchange format)
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
 - [`q`](https://github.com/harelba/q): Treat text as a database
@@ -155,5 +160,6 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`xvid`](https://labs.xvid.com/): High-performance, high-quality MPEG-4 video library
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
+- [`zsh`](https://www.zsh.org/): UNIX shell (command interpreter)
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
