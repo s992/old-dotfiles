@@ -27,5 +27,6 @@
   editor = /usr/local/bin/nvim
   excludesfile = ~/.gitignore
   trustctime = false
+  abbrev = 7
 [status]
   showUntrackedFiles = all
