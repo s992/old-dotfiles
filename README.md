@@ -85,6 +85,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`desk`](https://github.com/jamesob/desk): Lightweight workspace manager for the shell
 - [`dex2jar`](https://github.com/pxb1988/dex2jar): Tools to work with Android .dex and Java .class files
 - [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy): Good-lookin' diffs with diff-highlight and more
+- [`dive`](https://github.com/wagoodman/dive): A tool for exploring each layer in a docker image
 - [`docker-clean`](https://github.com/ZZROTDesign/docker-clean): Clean Docker containers, images, networks, and volumes
 - [`elixir`](https://elixir-lang.org/): Functional metaprogramming aware language built on Erlang VM
 - [`exa`](https://the.exa.website): Modern replacement for 'ls'
@@ -131,6 +132,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`pass`](https://www.passwordstore.org/): Password manager
 - [`peco`](https://github.com/peco/peco): Simplistic interactive filtering tool
 - [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
+- [`pigz`](https://zlib.net/pigz/): Parallel gzip
 - [`pkg-config`](https://freedesktop.org/wiki/Software/pkg-config/): Manage compile and link flags for libraries
 - [`protobuf`](https://github.com/protocolbuffers/protobuf/): Protocol buffers (Google's data interchange format)
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
@@ -141,9 +143,11 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`reattach-to-user-namespace`](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard): Reattach process (e.g., tmux) to background
 - [`rename`](http://plasmasturm.org/code/rename): Perl-powered file rename script with many helpful built-ins
 - [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
+- [`rtv`](https://github.com/michael-lazar/rtv): Command-line Reddit client
 - [`rust`](https://www.rust-lang.org/): Safe, concurrent, practical language
 - [`sourcekitten`](https://github.com/jpsim/SourceKitten): Framework and command-line tool for interacting with SourceKit
 - [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
+- [`swift-protobuf`](https://github.com/apple/swift-protobuf): Plugin and runtime library for using protobuf with Swift
 - [`swiftlint`](https://github.com/realm/SwiftLint): Tool to enforce Swift style and conventions
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
 - [`tasksh`](https://tasktools.org/projects/tasksh.html): Shell wrapper for Taskwarrior commands
