@@ -115,6 +115,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`infer`](https://fbinfer.com/): Static analyzer for Java, C, C++, and Objective-C
 - [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
 - [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
+- [`jpeg`](https://www.ijg.org/): Image manipulation library
 - [`jq`](https://stedolan.github.io/jq/): Lightweight and flexible command-line JSON processor
 - [`ktlint`](https://github.com/shyiko/ktlint): Kotlin linter
 - [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
@@ -163,6 +164,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`x264`](https://www.videolan.org/developers/x264.html): H.264/AVC encoder
 - [`xvid`](https://labs.xvid.com/): High-performance, high-quality MPEG-4 video library
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
+- [`zlib`](https://zlib.net/): General-purpose lossless data-compression library
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
 - [`zsh`](https://www.zsh.org/): UNIX shell (command interpreter)
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
