@@ -4,13 +4,14 @@
 	[
 		"node_modules/",
 		"build/",
-		"DerivedData"
+		"DerivedData",
+		".cache/"
 	],
 	"bold_folder_labels": true,
 	"font_face": "Fira Code",
 	"font_size": 14,
 	"highlight_line": true,
-	"highlight_trailing_whitespace": true,
+	"highlight_trailing_whitespace": false,
 	"ignored_packages":
 	[
 		"Markdown",
@@ -24,6 +25,7 @@
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"vintageous_modeline": true,
 	"vintageous_use_ctrl_keys": true,
 	"vintageous_use_sys_clipboard": true

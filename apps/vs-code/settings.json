@@ -8,14 +8,12 @@
     "editor.suggestOnTriggerCharacters": false,
     "typescript.check.tscVersion": false,
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "vscode-icons",
     "editor.minimap.enabled": true,
     "files.exclude": {
       "**/*.js": { "when": "$(basename).ts" },
       "**/*.map": { "when": "$(basename).map" },
       "**/*.css": { "when": "$(basename).scss" }
     },
-    "vsicons.dontShowNewVersionMessage": true,
     "typescript.check.npmIsInstalled": false,
     "workbench.startupEditor": "newUntitledFile",
     "gitlens.blame.line.enabled": false,
@@ -25,7 +23,6 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 13,
     "extensions.ignoreRecommendations": false,
-    "vsicons.projectDetection.disableDetect": true,
     "jupyter.appendResults": false,
     "gitlens.advanced.messages": {
       "suppressCommitHasNoPreviousCommitWarning": false,
@@ -67,5 +64,7 @@
       "statusBar.debuggingBackground": "#30302c",
       "statusBar.foreground": "#8197bf"
     },
-    "reason.codelens.enabled": true
+    "reason.codelens.enabled": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
   }

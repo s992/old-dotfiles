@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Babel",
+		"CSS Format",
 		"DiffTabs",
 		"Dockerfile Syntax Highlighting",
 		"GitGutter",
@@ -13,6 +14,8 @@
 		"Handlebars",
 		"Highlight Trailing Whitespace",
 		"Increment Selection",
+		"Javascript Beautify",
+		"JsFormat",
 		"JSX",
 		"Kotlin",
 		"MarkdownEditing",
@@ -21,6 +24,7 @@
 		"NeoVintageous",
 		"nginx",
 		"OpenBazelBUILDFile",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Pretty JSON",
 		"Protobuf Syntax Hightlighting",
@@ -28,7 +32,9 @@
 		"SideBarEnhancements",
 		"Smali",
 		"StringUtilities",
+		"Strip Whitespace Lines",
 		"Swift",
+		"Terraform",
 		"TOML",
 		"TypeScript"
 	]

@@ -44,6 +44,8 @@ source $HOME/tmuxinator.zsh
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
 # syntax highlighting rules
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

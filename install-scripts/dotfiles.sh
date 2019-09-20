@@ -29,6 +29,7 @@ ln -fs $PWD/home/.vimrc ~/.vimrc
 ln -fs $PWD/home/.zshenv ~/.zshenv
 ln -fs $PWD/home/.zshrc ~/.zshrc
 ln -fsn $PWD/home/.aws ~/.aws
+ln -fs $PWD/home/.ripgreprc ~/.ripgreprc
 
 if [ ! -f ~/.gitconfig ]; then
   ln -fs $PWD/home/.gitconfig ~/.gitconfig
