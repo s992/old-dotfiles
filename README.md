@@ -76,8 +76,11 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`awscli`](https://aws.amazon.com/cli/): Official Amazon AWS command-line interface
 - [`bat`](https://github.com/sharkdp/bat): Clone of cat(1) with syntax highlighting and Git integration
 - [`bazel`](https://bazel.build/): Google's own build tool
+- [`boost`](https://www.boost.org/): Collection of portable C++ source libraries
 - [`buku`](https://github.com/jarun/Buku): Powerful command-line bookmark manager
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
+- [`ceres-solver`](http://ceres-solver.org/): C++ library for large-scale optimization
+- [`cgal`](https://www.cgal.org/): Computational Geometry Algorithm Library
 - [`cheat`](https://github.com/chrisallenlane/cheat): Create and view interactive cheat sheets for *nix commands
 - [`cmake`](https://www.cmake.org/): Cross-platform make
 - [`cocoapods`](https://cocoapods.org/): Dependency manager for Cocoa projects
@@ -85,8 +88,9 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`desk`](https://github.com/jamesob/desk): Lightweight workspace manager for the shell
 - [`dex2jar`](https://github.com/pxb1988/dex2jar): Tools to work with Android .dex and Java .class files
 - [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy): Good-lookin' diffs with diff-highlight and more
-- [`dive`](https://github.com/wagoodman/dive): A tool for exploring each layer in a docker image
+- [`dive`](https://github.com/wagoodman/dive/): A tool for exploring each layer in a docker image
 - [`docker-clean`](https://github.com/ZZROTDesign/docker-clean): Clean Docker containers, images, networks, and volumes
+- [`eigen`](https://eigen.tuxfamily.org/): C++ template library for linear algebra
 - [`elixir`](https://elixir-lang.org/): Functional metaprogramming aware language built on Erlang VM
 - [`exa`](https://the.exa.website): Modern replacement for 'ls'
 - [`exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/index.html): Perl lib for reading and writing EXIF metadata
@@ -95,11 +99,15 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`fpp`](https://facebook.github.io/PathPicker/): CLI program that accepts piped input and presents files for selection
 - [`fzf`](https://github.com/junegunn/fzf): Command-line fuzzy finder written in Go
 - [`gawk`](https://www.gnu.org/software/gawk/): GNU awk utility
+- [`gdal`](https://www.gdal.org/): Geospatial Data Abstraction Library
 - [`git`](https://git-scm.com): Distributed revision control system
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
+- [`glew`](https://glew.sourceforge.io/): OpenGL Extension Wrangler Library
+- [`glfw`](https://www.glfw.org/): Multi-platform library for OpenGL applications
+- [`glslviewer`](http://patriciogonzalezvivo.com/2015/glslViewer/): Live-coding console tool that renders GLSL Shaders
 - [`gmp`](https://gmplib.org/): GNU multiple precision arithmetic library
-- [`gnu-getopt`](http://frodo.looijaard.name/project/getopt): Command-line option parsing library
+- [`gnu-getopt`](https://github.com/karelzak/util-linux): Command-line option parsing utility
 - [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
 - [`go`](https://golang.org): Open source programming language to build simple/reliable/efficient software
 - [`gradle`](https://www.gradle.org/): Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -110,37 +118,45 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`highlight`](http://www.andre-simon.de/doku/highlight/en/highlight.php): Convert source code to formatted text with syntax highlighting
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
 - [`httpie`](https://httpie.org/): User-friendly cURL replacement (command-line HTTP client)
+- [`hub`](https://hub.github.com/): Add GitHub support to git on the command-line
 - [`ideviceinstaller`](https://www.libimobiledevice.org/): Cross-platform library for communicating with iOS devices
 - [`imagemagick`](https://www.imagemagick.org/): Tools and libraries to manipulate images in many formats
 - [`infer`](https://fbinfer.com/): Static analyzer for Java, C, C++, and Objective-C
 - [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
 - [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
+- [`irssi`](https://irssi.org/): Modular IRC client
 - [`jpeg`](https://www.ijg.org/): Image manipulation library
 - [`jq`](https://stedolan.github.io/jq/): Lightweight and flexible command-line JSON processor
 - [`ktlint`](https://github.com/shyiko/ktlint): Kotlin linter
 - [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
 - [`lame`](https://lame.sourceforge.io/): High quality MPEG Audio Layer III (MP3) encoder
 - [`libffi`](https://sourceware.org/libffi/): Portable Foreign Function Interface library
+- [`libomp`](https://openmp.llvm.org/): LLVM's OpenMP runtime library
 - [`libxml2`](http://xmlsoft.org/): GNOME XML library
 - [`libyaml`](https://github.com/yaml/libyaml): YAML Parser
 - [`lynx`](https://invisible-island.net/lynx/): Text-based web browser
 - [`macvim`](https://github.com/macvim-dev/macvim): GUI for vim, made for macOS
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
 - [`mdcat`](https://github.com/lunaryorn/mdcat): Show markdown documents on text terminals
+- [`navi`](https://github.com/denisidoro/navi): An interactive cheatsheet tool for the command-line
 - [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
+- [`ninja`](https://ninja-build.org/): Small build system for use with gyp or CMake
 - [`nvm`](https://github.com/creationix/nvm): Manage multiple Node.js versions
+- [`opencv`](https://opencv.org/): Open source computer vision library
 - [`openssl`](https://openssl.org/): SSL/TLS cryptography library
 - [`pass`](https://www.passwordstore.org/): Password manager
 - [`peco`](https://github.com/peco/peco): Simplistic interactive filtering tool
 - [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
 - [`pigz`](https://zlib.net/pigz/): Parallel gzip
 - [`pkg-config`](https://freedesktop.org/wiki/Software/pkg-config/): Manage compile and link flags for libraries
+- [`postgresql`](https://www.postgresql.org/): Object-relational database system
 - [`protobuf`](https://github.com/protocolbuffers/protobuf/): Protocol buffers (Google's data interchange format)
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
 - [`q`](https://github.com/harelba/q): Treat text as a database
 - [`qt`](https://www.qt.io/): Cross-platform application and UI framework
 - [`r`](https://www.r-project.org/): Software environment for statistical computing
 - [`ranger`](https://ranger.github.io): File browser
+- [`readline`](https://tiswww.case.edu/php/chet/readline/rltop.html): Library for command-line editing
 - [`reattach-to-user-namespace`](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard): Reattach process (e.g., tmux) to background
 - [`rename`](http://plasmasturm.org/code/rename): Perl-powered file rename script with many helpful built-ins
 - [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
@@ -164,8 +180,10 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`x264`](https://www.videolan.org/developers/x264.html): H.264/AVC encoder
 - [`xvid`](https://labs.xvid.com/): High-performance, high-quality MPEG-4 video library
 - [`yarn`](https://yarnpkg.com/): JavaScript package manager
+- [`yq`](https://github.com/mikefarah/yq): Process YAML documents from the CLI
 - [`zlib`](https://zlib.net/): General-purpose lossless data-compression library
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
 - [`zsh`](https://www.zsh.org/): UNIX shell (command interpreter)
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
+- [`zstd`](https://facebook.github.io/zstd/): Zstandard is a real-time compression algorithm
