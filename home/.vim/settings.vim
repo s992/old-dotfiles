@@ -33,6 +33,11 @@ set nowb
 set noswapfile
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set background=dark
+set maxmempattern=2000000
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
 
 if (has("termguicolors"))
   set termguicolors
@@ -80,3 +85,4 @@ augroup quickfix
   autocmd FileType qf setlocal wrap
 augroup END
 
+let g:workspace_autosave = 0

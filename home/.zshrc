@@ -36,7 +36,7 @@ for file in $HOME/.{path,exports,aliases,functions,secrets,aliases_private,funct
 done
 unset file
 
-export PATH="$HOME/dev/flutter/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/27.0.3:$ANDROID_HOME/tools/bin:$PATH"
+export PATH="$HOME/.nimble/bin:$HOME/dev/flutter/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/27.0.3:$ANDROID_HOME/tools/bin:$PATH"
 
 source $HOME/tmuxinator.zsh
 
@@ -94,3 +94,5 @@ export FZF_COMPLETION_TRIGGER=''
 bindkey '^F' fzf-completion
 
 eval $(thefuck --alias)
+
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'

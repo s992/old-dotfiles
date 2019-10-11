@@ -13,12 +13,8 @@ let g:lightline = {
 let g:lightline.tabline = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type = {'buffers': 'tabsel'}
-
-" neomake
-" call neomake#configure#automake('nrwi', 500)
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
+let g:lightline.component_function = {'cocstatus': 'coc#status', 'session': 'session#statusline'}
+let g:lightline.active = {'left': [['mode', 'cocstatus', 'filename', 'session']]}
 
 " prettier
 let g:prettier#exec_cmd_async = 1
@@ -48,7 +44,7 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 " In Neovim, you can set up fzf window using a Vim command
-let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_layout = { 'down': '~40%' }
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -76,17 +72,23 @@ let g:SuperTabCrMapping = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
-" ctrlp.vim
-let g:ctrlp_use_caching = 0
-let g:ctrlp_max_files = 10000
-let g:ctrlp_working_path_mode = 'r'
-let g:ctrlp_user_command = 'ag %s -l -i --nogroup --nocolor --hidden -g ""'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-let g:ctrlp_switch_buffer = 0
-
 " rainbow parens
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+" fzf/simple-session, stolen from ctrl-p extension
+function! s:fzf_get_sessions()
+  let l:sessions = session#list()
+  if exists("v:this_session")
+    let l:sessions = filter(l:sessions, "v:val != '".v:this_session."'")
+  endif
+  return l:sessions
+endfunction
+
+function! s:fzf_select_session(line)
+  call session#switch(a:line)
+endfunction
+
+command! FZFSessions call fzf#run({ 'source': s:fzf_get_sessions(), 'sink': function('s:fzf_select_session'), 'down': '~40%' })

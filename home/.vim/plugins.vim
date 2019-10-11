@@ -1,7 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-
 if (!has('nvim'))
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
@@ -11,20 +9,20 @@ endif
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'ervandew/supertab'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'thaerkh/vim-workspace'
 Plug 'easymotion/vim-easymotion'
+Plug 'manuel-colmenero/vim-simple-session'
 
 " generic coding
-Plug 'Townk/vim-autoclose'
+Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
@@ -45,10 +43,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
-" ios
-Plug 'eraserhd/vim-ios'
-Plug 'keith/swift.vim'
 
 " wiki
 Plug 'vimwiki/vimwiki'

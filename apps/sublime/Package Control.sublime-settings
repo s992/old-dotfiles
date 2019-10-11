@@ -23,6 +23,7 @@
 		"MiniPy",
 		"NeoVintageous",
 		"nginx",
+		"NimLime",
 		"OpenBazelBUILDFile",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
@@ -36,6 +37,7 @@
 		"Swift",
 		"Terraform",
 		"TOML",
-		"TypeScript"
+		"TypeScript",
+		"VimL"
 	]
 }
