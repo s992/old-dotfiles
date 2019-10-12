@@ -92,3 +92,21 @@ function! s:fzf_select_session(line)
 endfunction
 
 command! FZFSessions call fzf#run({ 'source': s:fzf_get_sessions(), 'sink': function('s:fzf_select_session'), 'down': '~40%' })
+
+" fzf command palette
+function! s:fzf_select_palette(line)
+  if a:line == 'Copy relative path'
+    execute 'let @+ = expand("%")'
+  elseif a:line == 'Copy absolute path'
+    execute 'let @+ = expand("%:p")'
+  elseif a:line == 'Close tab'
+    execute 'tabclose'
+  elseif a:line == 'CoC Palette'
+    execute 'CocCommand'
+  else
+    echo a:line
+    echoerr 'didnt work?'
+  endif
+endfunction
+
+command! FZFPalette call fzf#run({ 'source': ['Copy relative path', 'Copy absolute path', 'Close tab', 'CoC Palette'], 'sink': function('s:fzf_select_palette'), 'up': '~40%' })

@@ -60,6 +60,9 @@ map <C-F> :Rg<space>
 " fzf simple-session
 map <C-space> :FZFSessions<CR>
 
+" fzf palette
+map P :FZFPalette<CR>
+
 " CoC
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -146,3 +149,8 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " use `:OR` for organize import of current buffer
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" signify
+nnoremap <leader>gd :SignifyDiff<CR>
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)

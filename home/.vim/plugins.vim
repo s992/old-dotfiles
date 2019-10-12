@@ -10,12 +10,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
 Plug 'jeetsukumaran/vim-buffergator'
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'thaerkh/vim-workspace'
 Plug 'easymotion/vim-easymotion'
 Plug 'manuel-colmenero/vim-simple-session'
+Plug 'mhinz/vim-signify'
 
 " generic coding
 Plug 'jiangmiao/auto-pairs'
