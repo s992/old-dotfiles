@@ -94,19 +94,16 @@ endfunction
 command! FZFSessions call fzf#run({ 'source': s:fzf_get_sessions(), 'sink': function('s:fzf_select_session'), 'down': '~40%' })
 
 " fzf command palette
+let s:fzf_command_options = {
+  \ 'Copy relative path': 'let @+ = expand("%")',
+  \ 'Copy absolute path': 'let @+ = expand("%:p")',
+  \ 'Close tab': 'tabclose',
+  \ 'CoC Palette': 'CocCommand',
+  \ 'Format JSON': '%!python -m json.tool',
+  \ }
+
 function! s:fzf_select_palette(line)
-  if a:line == 'Copy relative path'
-    execute 'let @+ = expand("%")'
-  elseif a:line == 'Copy absolute path'
-    execute 'let @+ = expand("%:p")'
-  elseif a:line == 'Close tab'
-    execute 'tabclose'
-  elseif a:line == 'CoC Palette'
-    execute 'CocCommand'
-  else
-    echo a:line
-    echoerr 'didnt work?'
-  endif
+  execute s:fzf_command_options[a:line]
 endfunction
 
-command! FZFPalette call fzf#run({ 'source': ['Copy relative path', 'Copy absolute path', 'Close tab', 'CoC Palette'], 'sink': function('s:fzf_select_palette'), 'up': '~40%' })
+command! FZFPalette call fzf#run({ 'source': keys(s:fzf_command_options), 'sink': function('s:fzf_select_palette'), 'up': '~40%' })
