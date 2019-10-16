@@ -101,6 +101,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`gawk`](https://www.gnu.org/software/gawk/): GNU awk utility
 - [`gdal`](https://www.gdal.org/): Geospatial Data Abstraction Library
 - [`git`](https://git-scm.com): Distributed revision control system
+- [`git-delta`](https://github.com/dandavison/delta): A syntax-highlighting pager for git
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
 - [`glew`](https://glew.sourceforge.io/): OpenGL Extension Wrangler Library
@@ -115,6 +116,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`graphviz`](https://www.graphviz.org/): Graph visualization software from AT&T and Bell Labs
 - [`grip`](https://github.com/joeyespo/grip): GitHub Markdown previewer
 - [`gtk+3`](https://gtk.org/): Toolkit for creating graphical user interfaces
+- [`hexyl`](https://github.com/sharkdp/hexyl): Command-line hex viewer
 - [`highlight`](http://www.andre-simon.de/doku/highlight/en/highlight.php): Convert source code to formatted text with syntax highlighting
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
 - [`httpie`](https://httpie.org/): User-friendly cURL replacement (command-line HTTP client)
@@ -164,6 +166,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`rust`](https://www.rust-lang.org/): Safe, concurrent, practical language
 - [`sourcekitten`](https://github.com/jpsim/SourceKitten): Framework and command-line tool for interacting with SourceKit
 - [`sqlite`](https://sqlite.org/): Command-line interface for SQLite
+- [`starship`](https://starship.rs): The cross-shell prompt for astronauts
 - [`swift-protobuf`](https://github.com/apple/swift-protobuf): Plugin and runtime library for using protobuf with Swift
 - [`swiftlint`](https://github.com/realm/SwiftLint): Tool to enforce Swift style and conventions
 - [`task`](https://taskwarrior.org/): Feature-rich console based todo list manager
@@ -187,3 +190,4 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
 - [`zstd`](https://facebook.github.io/zstd/): Zstandard is a real-time compression algorithm
+

@@ -23,6 +23,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'cespare/vim-toml'
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'

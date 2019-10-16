@@ -1,0 +1,18 @@
+prompt_order = [
+  "directory",
+  "git_branch",
+  "git_state",
+  "git_status",
+  "cmd_duration",
+  "line_break",
+  "character",
+]
+
+[character]
+symbol = "➜ "
+error_symbol = "✗"
+use_symbol_for_status = true
+
+[directory]
+truncate_to_repo = false
+

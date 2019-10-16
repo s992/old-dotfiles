@@ -1,5 +1,7 @@
 #!/bin/sh
 
+brew bundle dump --force
+
 cat Brewfile |
   ag 'brew "' |
   awk '{$0=$2} {gsub(/[",]/, "")}1' |

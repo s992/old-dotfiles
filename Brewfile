@@ -1,4 +1,5 @@
 tap "bazelbuild/tap"
+tap "dandavison/delta", "https://github.com/dandavison/delta"
 tap "denisidoro/tools"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -64,6 +65,7 @@ brew "graphicsmagick"
 brew "graphviz"
 brew "grip"
 brew "gtk+3"
+brew "hexyl"
 brew "highlight"
 brew "html-xml-utils"
 brew "httpie"
@@ -103,6 +105,7 @@ brew "ripgrep"
 brew "rtv"
 brew "rust"
 brew "sourcekitten"
+brew "starship"
 brew "swift-protobuf"
 brew "swiftlint"
 brew "task"
@@ -121,6 +124,7 @@ brew "zplug"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "dandavison/delta/git-delta"
 brew "denisidoro/tools/navi"
 brew "saulpw/vd/visidata"
 brew "shyiko/ktlint/ktlint"
@@ -146,8 +150,10 @@ cask "spotify"
 cask "sublime-text"
 cask "viscosity"
 cask "visual-studio-code"
+mas "", id: 1233965871
 mas "Flycut", id: 442160987
 mas "iMovie", id: 408981434
 mas "LogRabbit", id: 930220329
 mas "Quiver", id: 866773894
+mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835

@@ -17,6 +17,7 @@ set -euo pipefail
 ./install-scripts/ranger.sh
 ./install-scripts/vimplug.sh
 ./install-scripts/neovim.sh
+./install-scripts/starship.sh
 ./install-scripts/dotfiles.sh
 
 echo "Manual steps:"
