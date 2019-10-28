@@ -86,4 +86,5 @@ augroup quickfix
 augroup END
 
 let g:workspace_autosave = 0
+let $FZF_DEFAULT_COMMAND = 'fd --type f --hidden --follow --exclude .git'
 
