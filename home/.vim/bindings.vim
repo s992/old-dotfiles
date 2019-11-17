@@ -45,6 +45,7 @@ inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
 " workspace
 nnoremap <leader>a :ToggleWorkspace<CR>
+nnoremap <leader>s :Session<space>
 
 " easymotion
 map <leader>f <Plug>(easymotion-bd-f)
@@ -154,3 +155,9 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 nnoremap <leader>gd :SignifyDiff<CR>
 nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
+
+" move lines
+nnoremap <S-Up> :<C-u>silent! move-2<CR>==
+nnoremap <S-Down> :<C-u>silent! move+<CR>==
+xnoremap <S-Up> :<C-u>silent! '<,'>move-2<CR>gv=gv
+xnoremap <S-Down> :<C-u>silent! '<,'>move'>+<CR>gv=gv

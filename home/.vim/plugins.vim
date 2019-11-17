@@ -48,5 +48,9 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " wiki
 Plug 'vimwiki/vimwiki'
 
+" syntax galore
+Plug 'jparise/vim-graphql'
+Plug 'martinda/Jenkinsfile-vim-syntax'
+
 call plug#end()
 

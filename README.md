@@ -81,7 +81,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
 - [`ceres-solver`](http://ceres-solver.org/): C++ library for large-scale optimization
 - [`cgal`](https://www.cgal.org/): Computational Geometry Algorithm Library
-- [`cheat`](https://github.com/chrisallenlane/cheat): Create and view interactive cheat sheets for *nix commands
+- [`cheat`](https://github.com/cheat/cheat): Create and view interactive cheat sheets for *nix commands
 - [`cmake`](https://www.cmake.org/): Cross-platform make
 - [`cocoapods`](https://cocoapods.org/): Dependency manager for Cocoa projects
 - [`coreutils`](https://www.gnu.org/software/coreutils): GNU File, Shell, and Text utilities
@@ -103,6 +103,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`git`](https://git-scm.com): Distributed revision control system
 - [`git-delta`](https://github.com/dandavison/delta): A syntax-highlighting pager for git
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
+- [`git-madge`](https://github.com/jez/git-madge): Git-aware madge wrapper
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
 - [`glew`](https://glew.sourceforge.io/): OpenGL Extension Wrangler Library
 - [`glfw`](https://www.glfw.org/): Multi-platform library for OpenGL applications
@@ -111,6 +112,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`gnu-getopt`](https://github.com/karelzak/util-linux): Command-line option parsing utility
 - [`gnupg`](https://gnupg.org/): GNU Pretty Good Privacy (PGP) package
 - [`go`](https://golang.org): Open source programming language to build simple/reliable/efficient software
+- [`gotop`](https://github.com/cjbassi/gotop): A terminal based graphical activity monitor inspired by gtop and vtop
 - [`gradle`](https://www.gradle.org/): Open-source build automation tool based on the Groovy and Kotlin DSL
 - [`graphicsmagick`](http://www.graphicsmagick.org/): Image processing tools collection
 - [`graphviz`](https://www.graphviz.org/): Graph visualization software from AT&T and Bell Labs
@@ -140,7 +142,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`macvim`](https://github.com/macvim-dev/macvim): GUI for vim, made for macOS
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
 - [`mdcat`](https://github.com/lunaryorn/mdcat): Show markdown documents on text terminals
-- [`navi`](https://github.com/denisidoro/navi): An interactive cheatsheet tool for the command-line
+- [`navi`](https://github.com/denisidoro/navi): Interactive cheatsheet tool for the command-line
 - [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
 - [`ninja`](https://ninja-build.org/): Small build system for use with gyp or CMake
 - [`nvm`](https://github.com/creationix/nvm): Manage multiple Node.js versions
@@ -158,9 +160,11 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`qt`](https://www.qt.io/): Cross-platform application and UI framework
 - [`r`](https://www.r-project.org/): Software environment for statistical computing
 - [`ranger`](https://ranger.github.io): File browser
+- [`rclone`](https://rclone.org/): Rsync for cloud storage
 - [`readline`](https://tiswww.case.edu/php/chet/readline/rltop.html): Library for command-line editing
 - [`reattach-to-user-namespace`](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard): Reattach process (e.g., tmux) to background
 - [`rename`](http://plasmasturm.org/code/rename): Perl-powered file rename script with many helpful built-ins
+- [`restic`](https://restic.github.io/): Fast, efficient and secure backup program
 - [`ripgrep`](https://github.com/BurntSushi/ripgrep): Search tool like grep and The Silver Searcher
 - [`rtv`](https://github.com/michael-lazar/rtv): Command-line Reddit client
 - [`rust`](https://www.rust-lang.org/): Safe, concurrent, practical language
@@ -182,8 +186,9 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`x264`](https://www.videolan.org/developers/x264.html): H.264/AVC encoder
 - [`xvid`](https://labs.xvid.com/): High-performance, high-quality MPEG-4 video library
-- [`yarn`](https://yarnpkg.com/): JavaScript package manager
+- [`yabai`](https://github.com/koekeishiya/yabai): A tiling window manager for macOS based on binary space partitioning.
 - [`yq`](https://github.com/mikefarah/yq): Process YAML documents from the CLI
+- [`yvm`](https://yvm.js.org): Manage multiple versions of Yarn
 - [`zlib`](https://zlib.net/): General-purpose lossless data-compression library
 - [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
 - [`zsh`](https://www.zsh.org/): UNIX shell (command interpreter)
