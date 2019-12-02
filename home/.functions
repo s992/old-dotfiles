@@ -183,3 +183,16 @@ function blamedir() {
     printf "%-${MAXLEN}s -- %s\n" "$f" "$str"
   done
 }
+
+function branch-age() {
+  echo -e `git show --format="%ci %cr" $1 | head -n 1` \\t$1
+}
+
+function local-branches-age() {
+  local branches
+  branches=($(git local-branches))
+
+  for branch in $branches; do
+    branch-age $branch
+  done
+}
