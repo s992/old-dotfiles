@@ -77,10 +77,11 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`bat`](https://github.com/sharkdp/bat): Clone of cat(1) with syntax highlighting and Git integration
 - [`bazel`](https://bazel.build/): Google's own build tool
 - [`boost`](https://www.boost.org/): Collection of portable C++ source libraries
-- [`buku`](https://github.com/jarun/Buku): Powerful command-line bookmark manager
+- [`broot`](https://dystroy.org/broot/): New way to see and navigate directory trees
+- [`buku`](https://github.com/jarun/buku): Powerful command-line bookmark manager
 - [`carthage`](https://github.com/Carthage/Carthage): Decentralized dependency manager for Cocoa
 - [`ceres-solver`](http://ceres-solver.org/): C++ library for large-scale optimization
-- [`cgal`](https://www.cgal.org/): Computational Geometry Algorithm Library
+- [`cgal`](https://www.cgal.org/): Computational Geometry Algorithms Library
 - [`cheat`](https://github.com/cheat/cheat): Create and view interactive cheat sheets for *nix commands
 - [`cmake`](https://www.cmake.org/): Cross-platform make
 - [`cocoapods`](https://cocoapods.org/): Dependency manager for Cocoa projects
@@ -92,16 +93,19 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`docker-clean`](https://github.com/ZZROTDesign/docker-clean): Clean Docker containers, images, networks, and volumes
 - [`eigen`](https://eigen.tuxfamily.org/): C++ template library for linear algebra
 - [`elixir`](https://elixir-lang.org/): Functional metaprogramming aware language built on Erlang VM
+- [`entr`](http://entrproject.org/): Run arbitrary commands when files change
 - [`exa`](https://the.exa.website): Modern replacement for 'ls'
-- [`exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/index.html): Perl lib for reading and writing EXIF metadata
+- [`exiftool`](https://exiftool.org): Perl lib for reading and writing EXIF metadata
+- [`fastlane`](https://fastlane.tools): Easiest way to build and release mobile apps
 - [`fd`](https://github.com/sharkdp/fd): Simple, fast and user-friendly alternative to find
 - [`ffmpeg`](https://ffmpeg.org/): Play, record, convert, and stream audio and video
 - [`fpp`](https://facebook.github.io/PathPicker/): CLI program that accepts piped input and presents files for selection
 - [`fzf`](https://github.com/junegunn/fzf): Command-line fuzzy finder written in Go
 - [`gawk`](https://www.gnu.org/software/gawk/): GNU awk utility
 - [`gdal`](https://www.gdal.org/): Geospatial Data Abstraction Library
+- [`geos`](https://trac.osgeo.org/geos): Geometry Engine
 - [`git`](https://git-scm.com): Distributed revision control system
-- [`git-delta`](https://github.com/dandavison/delta): A syntax-highlighting pager for git
+- [`git-delta`](https://github.com/dandavison/delta): A viewer for git and diff output
 - [`git-lfs`](https://github.com/git-lfs/git-lfs): Git extension for versioning large files
 - [`git-madge`](https://github.com/jez/git-madge): Git-aware madge wrapper
 - [`glances`](https://nicolargo.github.io/glances/): Alternative to top/htop
@@ -123,10 +127,10 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`html-xml-utils`](https://www.w3.org/Tools/HTML-XML-utils/): Tools for manipulating HTML and XML files
 - [`httpie`](https://httpie.org/): User-friendly cURL replacement (command-line HTTP client)
 - [`hub`](https://hub.github.com/): Add GitHub support to git on the command-line
-- [`ideviceinstaller`](https://www.libimobiledevice.org/): Cross-platform library for communicating with iOS devices
+- [`ideviceinstaller`](https://www.libimobiledevice.org/): Tool for managing apps on iOS devices
 - [`imagemagick`](https://www.imagemagick.org/): Tools and libraries to manipulate images in many formats
 - [`infer`](https://fbinfer.com/): Static analyzer for Java, C, C++, and Objective-C
-- [`ios-deploy`](https://github.com/phonegap/ios-deploy): Install and debug iPhone apps from the command-line
+- [`ios-deploy`](https://github.com/ios-control/ios-deploy): Install and debug iPhone apps from the command-line
 - [`ios-webkit-debug-proxy`](https://github.com/google/ios-webkit-debug-proxy): DevTools proxy for iOS devices
 - [`irssi`](https://irssi.org/): Modular IRC client
 - [`jpeg`](https://www.ijg.org/): Image manipulation library
@@ -135,6 +139,7 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`kubernetes-cli`](https://kubernetes.io/): Kubernetes command-line interface
 - [`lame`](https://lame.sourceforge.io/): High quality MPEG Audio Layer III (MP3) encoder
 - [`libffi`](https://sourceware.org/libffi/): Portable Foreign Function Interface library
+- [`libimobiledevice`](https://www.libimobiledevice.org/): Library to communicate with iOS devices natively
 - [`libomp`](https://openmp.llvm.org/): LLVM's OpenMP runtime library
 - [`libxml2`](http://xmlsoft.org/): GNOME XML library
 - [`libyaml`](https://github.com/yaml/libyaml): YAML Parser
@@ -142,12 +147,12 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`macvim`](https://github.com/macvim-dev/macvim): GUI for vim, made for macOS
 - [`mas`](https://github.com/mas-cli/mas): Mac App Store command-line interface
 - [`mdcat`](https://github.com/lunaryorn/mdcat): Show markdown documents on text terminals
-- [`navi`](https://github.com/denisidoro/navi): Interactive cheatsheet tool for the command-line
+- [`navi`](https://github.com/denisidoro/navi): Interactive cheatsheet tool for the command-line.
 - [`neovim`](https://neovim.io/): Ambitious Vim-fork focused on extensibility and agility
 - [`ninja`](https://ninja-build.org/): Small build system for use with gyp or CMake
-- [`nvm`](https://github.com/creationix/nvm): Manage multiple Node.js versions
+- [`nvm`](https://github.com/nvm-sh/nvm): Manage multiple Node.js versions
 - [`opencv`](https://opencv.org/): Open source computer vision library
-- [`openssl`](https://openssl.org/): SSL/TLS cryptography library
+- [`openssl@1.1`](https://openssl.org/): Cryptography and SSL/TLS Toolkit
 - [`pass`](https://www.passwordstore.org/): Password manager
 - [`peco`](https://github.com/peco/peco): Simplistic interactive filtering tool
 - [`pidcat`](https://github.com/JakeWharton/pidcat): Colored logcat script to show entries only for specified app
@@ -155,8 +160,11 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`pkg-config`](https://freedesktop.org/wiki/Software/pkg-config/): Manage compile and link flags for libraries
 - [`postgresql`](https://www.postgresql.org/): Object-relational database system
 - [`protobuf`](https://github.com/protocolbuffers/protobuf/): Protocol buffers (Google's data interchange format)
+- [`pv`](https://www.ivarch.com/programs/pv.shtml): Monitor data's progress through a pipe
+- [`pyenv`](https://github.com/pyenv/pyenv): Python version management
+- [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv): Pyenv plugin to manage virtualenv
 - [`python@2`](https://www.python.org/): Interpreted, interactive, object-oriented programming language
-- [`q`](https://github.com/harelba/q): Treat text as a database
+- [`q`](https://harelba.github.io/q/): Run SQL directly on CSV or TSV files
 - [`qt`](https://www.qt.io/): Cross-platform application and UI framework
 - [`r`](https://www.r-project.org/): Software environment for statistical computing
 - [`ranger`](https://ranger.github.io): File browser
@@ -185,14 +193,15 @@ Here's an auto-generated list of the stuff in my Brewfile. I haven't figured out
 - [`watchman`](https://github.com/facebook/watchman): Watch files and take action when they change
 - [`wget`](https://www.gnu.org/software/wget/): Internet file retriever
 - [`x264`](https://www.videolan.org/developers/x264.html): H.264/AVC encoder
+- [`xdot`](https://github.com/jrfonseca/xdot.py): Interactive viewer for graphs written in Graphviz's dot language
 - [`xvid`](https://labs.xvid.com/): High-performance, high-quality MPEG-4 video library
+- [`xz`](https://tukaani.org/xz/): General-purpose data compression with high compression ratio
 - [`yabai`](https://github.com/koekeishiya/yabai): A tiling window manager for macOS based on binary space partitioning.
 - [`yq`](https://github.com/mikefarah/yq): Process YAML documents from the CLI
 - [`yvm`](https://yvm.js.org): Manage multiple versions of Yarn
 - [`zlib`](https://zlib.net/): General-purpose lossless data-compression library
-- [`zplug`](https://zplug.sh/): The next-generation plugin manager for zsh
+- [`zplug`](https://github.com/zplug/zplug/): The next-generation plugin manager for zsh
 - [`zsh`](https://www.zsh.org/): UNIX shell (command interpreter)
 - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions): Fish-like fast/unobtrusive autosuggestions for zsh
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for zsh
 - [`zstd`](https://facebook.github.io/zstd/): Zstandard is a real-time compression algorithm
-

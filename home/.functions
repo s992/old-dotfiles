@@ -25,10 +25,6 @@ function plogcat() {
   adb logcat | rg "$pid"
 }
 
-function pyenv() {
-  source "$HOME/virtualenvs/$1/bin/activate"
-}
-
 function cs() {
   open -a "Google Chrome" "https://devhints.io/$1"
 }

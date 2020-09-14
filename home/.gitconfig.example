@@ -33,4 +33,5 @@
   abbrev = 9
 [status]
   showUntrackedFiles = all
-
+[pull]
+  rebase = false

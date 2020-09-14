@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/dotfiles/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:$PATH"
+export PATH="$HOME/dotfiles/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:./node_modules/.bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -102,3 +102,13 @@ eval $(starship init zsh)
 
 export YVM_DIR=/usr/local/opt/yvm
 [ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+
+export PATH="$PATH:$HOME/.dronedeploy/kutil"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+if which pyenv-virtualenv-init > /dev/null; then
+  eval "$(pyenv virtualenv-init -)"
+fi
