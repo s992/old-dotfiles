@@ -32,6 +32,6 @@ alias gpr='git pull && reset-origin'
 alias -g J='| jq'
 alias -g L='| less'
 alias -g G='| gnomon -t absolute'
-alias -g T='| tee'
+alias -g T='2>&1 | tee'
 alias -g X='| xargs'
 

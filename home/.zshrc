@@ -41,8 +41,8 @@ export PATH="$HOME/.nimble/bin:$HOME/dev/flutter/bin:$ANDROID_HOME/platform-tool
 source $HOME/tmuxinator.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# export PATH="$PATH:$HOME/.rvm/bin"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
@@ -112,3 +112,5 @@ fi
 if which pyenv-virtualenv-init > /dev/null; then
   eval "$(pyenv virtualenv-init -)"
 fi
+
+eval "$(rbenv init -)"

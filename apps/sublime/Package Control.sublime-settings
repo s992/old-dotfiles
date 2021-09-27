@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"Babel",
 		"CSS Format",
 		"DiffTabs",
 		"Dockerfile Syntax Highlighting",
@@ -39,6 +38,6 @@
 		"Terraform",
 		"TOML",
 		"TypeScript",
-		"VimL"
-	]
+		"VimL",
+	],
 }

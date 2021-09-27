@@ -8,6 +8,7 @@
 		".cache/"
 	],
 	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"font_face": "Fira Code",
 	"font_size": 14,
 	"highlight_line": true,
@@ -19,7 +20,7 @@
 		"Sass",
 		"Six",
 		"Vintage",
-		"Vintageous"
+		"Vintageous",
 	],
 	"node_path": "/Users/seanwalsh/.nvm/versions/node/v8.9.0/bin/node",
 	"scroll_past_end": true,
@@ -29,5 +30,5 @@
 	"trim_trailing_white_space_on_save": true,
 	"vintageous_modeline": true,
 	"vintageous_use_ctrl_keys": true,
-	"vintageous_use_sys_clipboard": true
+	"vintageous_use_sys_clipboard": true,
 }
