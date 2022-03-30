@@ -3,5 +3,8 @@ home/.aliases_private
 home/.functions_private
 home/.gitconfig
 home/.aws/credentials
+home/.aws/config
+home/.aws/cli/cache
+home/.aws/sso/cache
 home/.taskrc-private
 bin/

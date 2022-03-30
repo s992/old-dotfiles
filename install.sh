@@ -8,7 +8,6 @@ set -euo pipefail
 ./install-scripts/node.sh
 ./install-scripts/mas-cli.sh
 ./install-scripts/brew.sh
-./install-scripts/python.sh
 ./install-scripts/yarn.sh
 ./install-scripts/iterm.sh
 ./install-scripts/vscode.sh

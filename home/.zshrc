@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # If you come from bash you might have to change your $PATH.
-export PATH="$HOME/dotfiles/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:./node_modules/.bin:$PATH"
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$HOME/dotfiles/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:./node_modules/.bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -21,6 +21,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export HOST_GID=$(id -g)
+export HOST_UID=$(id -u)
 
 export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/nvm/nvm.sh
@@ -90,8 +92,7 @@ _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
-export FZF_COMPLETION_TRIGGER=''
-bindkey '^F' fzf-completion
+export FZF_COMPLETION_TRIGGER='**'
 
 eval $(thefuck --alias)
 
@@ -107,6 +108,7 @@ export PATH="$PATH:$HOME/.dronedeploy/kutil"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 if which pyenv-virtualenv-init > /dev/null; then

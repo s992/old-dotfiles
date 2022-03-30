@@ -4,7 +4,7 @@
     "editor.tabSize": 2,
     "editor.renderIndentGuides": false,
     "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.suggestOnTriggerCharacters": false,
     "typescript.check.tscVersion": false,
     "workbench.colorTheme": "Monokai",
@@ -38,7 +38,6 @@
     },
     "vim.cmdLineInitialColon": true,
     "vim.useSystemClipboard": true,
-    "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.keymap": "chorded",
     "bracketPairColorizer.timeOut": 0,
@@ -122,4 +121,13 @@
       }
     ],
     "vsicons.dontShowNewVersionMessage": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.defaultDateStyle": "absolute",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
   }

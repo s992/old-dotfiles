@@ -1,3 +1,5 @@
 .DS_Store
 Session.vim
 .undodir/
+.python-version
+mock.js

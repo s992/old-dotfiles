@@ -28,6 +28,7 @@ alias bw='buku -w'
 alias bt='buku -t'
 alias bp='buku -p'
 alias gpr='git pull && reset-origin'
+alias aws-profiles='aws configure list-profiles'
 
 alias -g J='| jq'
 alias -g L='| less'
